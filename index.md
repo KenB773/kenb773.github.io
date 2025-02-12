@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+![CS Stock Photo](CS Photo.avif)
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
 [Link to another page](./another-page.html).
@@ -97,8 +97,6 @@ end
 ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
 
 ### Large image
-
-![Branching](CS Photo.avif)
 
 
 ### Definition lists can be used with HTML syntax.
