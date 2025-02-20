@@ -202,7 +202,47 @@ We have finished the module! THM offers some closing thoughts on the CKC - see b
 ![CKC Conclusion](THM Mod 3 - CKC Conclusion.png)
 
 
+## Module 4 - Unified Kill Chain
 
+THM: "Understanding the behaviours, objectives and methodologies of a cyber threat is a vital step to establishing a strong cybersecurity defence (known as a cybersecurity posture).
+
+In this room, you will be introduced to the UKC (Unified Kill Chain) framework that is used to help understand how cyber attacks occur."
+
+### Threat Modelling
+
+Threat modelling, in a cybersecurity context, is a series of steps to ultimately improve the security of a system. Threat modelling is about identifying risk and essentially boils down to:
+
+*  Identifying what systems and applications need to be secured and what function they serve in the environment. For example, is the system critical to normal operations, and is a system holding sensitive information like payment info or addresses?
+*  Assessing what vulnerabilities and weaknesses these systems and applications may have and how they could be potentially exploited
+*  Creating a plan of action to secure these systems and applications from the vulnerabilities highlighted
+*  Putting in policies to prevent these vulnerabilities from occurring again where possible (for example, implementing a software development life cycle (SDLC) for an application or training employees on phishing awareness).
+
+Threat modelling is an important procedure in reducing the risk within a system or application, as it creates a high-level overview of an organisation's IT assets (an asset in IT is a piece of software or hardware) and the procedures to resolve vulnerabilities.
+
+The UKC can encourage threat modelling as the UKC framework helps identify potential attack surfaces and how these systems may be exploited. STRIDE, DREAD and CVSS (to name a few) are all frameworks specifically used in threat modelling.
+
+### Introducing the UKC
+
+The UKC is more modern & detailed than many other frameworks, and is meant to be used in **complement** to (not in competition with) them.
+
+![UKC Visual](THM Unified Kill Chain.png)
+
+
+### UKC Phases - In, Through, Out
+
+In: Initial Foothold - Recon, Weaponization, Social Engineering, Exploitation, Persistence, Defence Evasion, C2, Pivoting
+Through: Network Propagation - Pivoting, Disocvery, Privilege Escalation, Execution, Credential Access, Lateral Movement
+Out: Action on Objectives - Collection, Exfiltration, Impact
+
+### UKC - Practical
+
+Once again, matching TTPs to the phases of the Unified Kill Chain.
+
+### UKC - Conclusion
+
+Another module finished!
+
+![UKC Conclusion](THM Mod 4 - Conclusion.png)
 
 
 
