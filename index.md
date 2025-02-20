@@ -199,7 +199,7 @@ Similar to the previous practical, we are required to match general concepts to 
 
 We have finished the module! THM offers some closing thoughts on the CKC - see below.
 
-!(CKC Conclusion)[THM Mod 3 - CKC Conclusion.png]
+![CKC Conclusion](THM Mod 3 - CKC Conclusion.png)
 
 
 
