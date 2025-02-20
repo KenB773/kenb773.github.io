@@ -10,6 +10,18 @@ Thanks for visiting my portfolio! What will follow is a rough outline of the var
 
 ![THM SOCL1 Icon](TryHackMe SOC L1 Icon.png)
 
+The first role-specific labs I'll be documenting will come from TryHackMe's SOC Level 1 learning path & certificate! Right off the bat and from the very first module, they have us using a simplified, mock SIEM to identify a malicious connection attempt, use a mock open-source IP address database to determine if the IP is known to be malicious, escalate the alert to the correct team member (in this case, the SOC Team Lead) and then block the IP address in the firewall once given permission to do so. \
+
+See photos below:
+
+![SIEM](TryHackMe SIEM 1.png)
+
+![IP Check](TryHackMe OS Database IP Checking 1.png)
+
+And the questions + answers:
+
+![Q+A](THM Module 1 Q+A.png)
+
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
