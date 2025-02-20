@@ -101,22 +101,105 @@ We finally reach the apex of the Pyramid of Pain, where we have Tactics, Techniq
 The questions we are given primarily relate to navigating and finding specific information within the ATT&CK framework, which has become something of a part-time job for me at this point! The edutainment on offer is truly bottomless.
 
 
-## Pyramid of Pain - Practical
+### Pyramid of Pain - Practical
 
 The practical involves matching descriptions to each 'block' of the Pyramid, then entering the flag awarded for doing so.
 
-## Pyramid of Pain - Conclusion
+### Pyramid of Pain - Conclusion
 
 We finished the module!
 
 ![Module 2 Conclusion](THM Mod 2 - Conclusion.png)
 
+## Module 3 - Cyber Kill Chain
 
+![CyberKillChain](THM Cyber Kill Chain.png)
 
+Moving on to the next module - Cyber Kill Chain! In the words of THM:
 
+"The term kill chain is a military concept related to the structure of an attack. It consists of target identification, decision and order to attack the target, and finally the target destruction.
 
+Thanks to Lockheed Martin, a global security and aerospace company, that established the Cyber Kill Chain® framework for the cybersecurity industry in 2011 based on the military concept. The framework defines the steps used by adversaries or malicious actors in cyberspace. To succeed, an adversary needs to go through all phases of the Kill Chain. We will go through the attack phases and help you better understand adversaries and their techniques used in the attack to defend yourself.
 
+So, why is it important to understand how Cyber Kill Chain works? 
 
+The Cyber Kill Chain will help you understand and protect against ransomware attacks, security breaches as well as Advanced Persistent Threats (APTs). You can use the Cyber Kill Chain to assess your network and system security by identifying missing security controls and closing certain security gaps based on your company's infrastructure.
+
+By understanding the Kill Chain as a SOC Analyst, Security Researcher, Threat Hunter, or Incident Responder, you will be able to recognize the intrusion attempts and understand the intruder's goals and objectives. 
+
+We will be exploring the following attack phases in this room:
+
+1. Reconnaissance
+2. Weaponization
+3. Delivery
+4. Exploitation
+5. Installation
+6. Command & Control
+7. Actions on Objectives 
+
+Learning Objectives: In this room, you will learn about each phase of the Cyber Kill Chain Framework, the advantages and disadvantages of the traditional Cyber Kill Chain. 
+
+Outcome: As a result, you will be ready to recognize different phases or stages of the attack carried out by an adversary and be able to break the "kill chain.""
+
+### Reconnaissance 
+
+The topic of OSINT is introduced, and specifically email harvesting is focused on with various examples of tools used, such as [theHarvester](https://github.com/laramies/theHarvester) here on Github.
+
+### Weaponization
+
+After a succesful reconnaissance stage, the threat actor will combine **malware** and **exploit(s)** into a deliverable **payload**. Malware may be custom-written by threat actors with access to more advanced resources, or can be software-generated or simply purchased on dark web markets. Per THM:
+
+"**Malware** is a program or software that is designed to damage, disrupt, or gain unauthorized access to a computer.
+
+An **exploit** is a program or a code that takes advantage of the vulnerability or flaw in the application or system.
+
+A **payload** is a malicious code that the attacker runs on the system."
+
+### Delivery
+
+Delivery is when the threat actor decides on the method for distributing their payload or malware. Common options include phishing emails, distributing infected USB drives (with various degrees of sophistication) and watering hole attacks, but there are many more that exist besides these.
+
+### Exploitation 
+
+To gain access to a system, the attacker must then exploit the vulnerability. The concept of lateral movement is introduced and defined, as well as the first mention of the OWASP TOP 10 and the link to a TryHackMe room in which all 10 are discussed and exploited in real-time labs (will do and document this at a later date). Zero-day exploits are also introduced and talked about.
+
+### Installation
+
+Per THM: "Once the attacker gets access to the system, he would want to reaccess the system if he loses connection to it or if he gets detected and has the initial access removed, or if the system is later patched. That is when the attacker needs to install a persistent backdoor. A persistent backdoor will let the attacker access the system he compromised in the past."
+
+Persistence can be achieved through web shells, installed backdoors via programs such as Meterpreter, [creating/modifying Windows services](https://attack.mitre.org/techniques/T1543/003/), or by adding the entry to the "run keys" for the malicious payload in the Registry or the Startup folder. In this phase, the attacker can also use the [Timestomping](https://attack.mitre.org/techniques/T1070/006/) technique to avoid detection by the forensic investigator and also to make the malware appear as a part of a legitimate program. The Timestomping technique lets an attacker modify the file's timestamps, including the modify, access, create and change times. 
+
+### Command & Control (C2)
+
+After gaining persistence and executing the malware on the target machine, the attacker can open a C2 channel through the malware to remotely control and manipulate the victim. This is also written as C&C or C2 Beaconing, and is a type of malicious communication between a C2 server and the malware on an infected host. The compromised endpoint would communicate with an external server set up by the attacker to establish a command & control channel. After establishing this connection, the attacker gains full control of the victim's machine. THM:
+
+"The most common C2 channels used by adversaries nowadays:
+
+The protocols HTTP on port 80 and HTTPS on port 443 - this type of beaconing blends the malicious traffic with the legitimate traffic and can help the attacker evade firewalls.  
+DNS (Domain Name Server). The infected machine makes constant DNS requests to the DNS server that belongs to an attacker, this type of C2 communication is also known as DNS Tunneling.
+[it is] important to note that [either] an adversary or another compromised host can be the owner of the C2 infrastructure."
+
+### Actions on Objectives (Exfiltration)
+
+After going through the previous 6 phases of the attack, the attacker can finally achieve their goals, which means taking action on their original objectives. With hands-on keyboard access, the attacker can achieve the following: 
+
+*  Collect the credentials from users.
+*  Perform privilege escalation (gaining elevated access like domain administrator access from a workstation by exploiting the misconfiguration).
+*  Internal reconnaissance (for example, an attacker gets to interact with internal software to find its vulnerabilities).
+*  Lateral movement through the company's environment.
+*  Collect and exfiltrate sensitive data.
+*  Deleting the backups and shadow copies. Shadow Copy is a Microsoft technology that can create backup copies, snapshots of computer files, or volumes. 
+*  Overwrite or corrupt data.
+
+### Cyber Kill Chain - Practical
+
+Similar to the previous practical, we are required to match general concepts to the different stages of the Chain.
+
+### Cyber Kill Chain - Conclusion
+
+We have finished the module! THM offers some closing thoughts on the CKC - see below.
+
+!(CKC Conclusion)[THM Mod 3 - CKC Conclusion.png]
 
 
 
