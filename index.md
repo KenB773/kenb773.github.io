@@ -74,6 +74,62 @@ We are then given an [example malware analysis report](https://assets.tryhackme.
 
 ![HA Q+A](THM Mod 2 - HA Q+A.png)
 
+### Annoying - Network Artifacts
+
+In the same 'yellow zone' as Host Artifacts are Network Artifacts. Again from THM: "A network artifact can be a user-agent string, C2 information, or URI patterns followed by the HTTP POST requests. An attacker might use a User-Agent string that hasn’t been observed in your environment before or seems out of the ordinary. The User-Agent is defined by RFC2616 as the request-header field that contains the information about the user agent originating the request."
+
+We're given some background and explanations here, as well as the first mention of our dearly beloved Wireshark!
+
+![NA Def](THM Mod 2 - Network Artifacts.png)
+
+Then some questions regarding the above screenshots:
+
+![NA Q+A](THM Mod 2 - NA Q+A.png)
+
+### Challenging - Tools
+
+At this point in the Pyramid, an attacker will likely give up, or if they're sufficiently advanced and/or committed, will at least have to go back to the drawing board and create a new tool that serves the same purpose. Threat actors without sufficient resources to continue will often be deflected at this point.
+
+![TMH Tools](THM Mod 2 - Tools.png)
+
+We get a description of fuzzy hashing and similarity analysis, as well as some info on SSDEEP and an example report from VirusTotal which highlights the SSDEEP. Some questions follow, which mostly involve SSDEEP's official website and their descriptions of terminology within.
+
+### Tough - TTPs
+
+We finally reach the apex of the Pyramid of Pain, where we have Tactics, Techniques & Procedures. We get our first mention of the omnipresent MITRE ATT&CK Matrix, which is a framework that lists, essentially, all the steps taken by a cyber adversary to achieve their goal in almost any possible circumstance. By detecting and responding to TTPs quickly, we leave the threat actor almost no chance to fight back.
+
+The questions we are given primarily relate to navigating and finding specific information within the ATT&CK framework, which has become something of a part-time job for me at this point! The edutainment on offer is truly bottomless.
+
+
+## Pyramid of Pain - Practical
+
+The practical involves matching descriptions to each 'block' of the Pyramid, then entering the flag awarded for doing so.
+
+## Pyramid of Pain - Conclusion
+
+We finished the module!
+
+![Module 2 Conclusion](THM Mod 2 - Conclusion.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
