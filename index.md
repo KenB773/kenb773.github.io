@@ -59,6 +59,20 @@ Finally, we're given an actual sandboxed file on AnyRun, and asked to answer the
 
 ![THM Mod 2 Q+A](THM Mod 2 - Q + A.png)
 
+### Annoying - Host Artifacts
+
+Moving up another step into the 'yellow zone', we have host artifacts. This is where the attacker will begin to feel much more frustrated if the attack is detected as it would likely require them to change their tools and methodologies, which can be very time consuming.
+
+From THM: "Host artifacts are the traces or observables that attackers leave on the system, such as registry values, suspicious process execution[s], attack patterns or IOCs (Indicators of Compromise), files dropped by malicious applications, or anything exclusive to the current threat."
+
+![Host Artifact Sus Proc Execution](THM Mod 2 - Host Artifiacts Sus Events.png)
+
+![Host Artifacts Dropped Files](THM Mod 2 - HA Dropped Files.png)
+
+We are then given an [example malware analysis report](https://assets.tryhackme.com/additional/pyramidofpain/task5-report.pdf), and asked to answer several questions based on the information within it:
+
+![HA Q+A](THM Mod 2 - HA Q+A.png)
+
 
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
