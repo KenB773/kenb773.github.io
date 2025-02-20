@@ -42,6 +42,24 @@ IP addresses are also quite easy for even less experienced adversaries to work a
 
 ![IP Example](THM Mod 2 - IP + FastFlux.png)
 
+### Simple - Domain Names
+
+Moving up the Pyramid once again, we have domain names. Direct from THM: "Domain Names can be a little more of a pain for the attacker to change as they would most likely need to purchase the domain, register it and modify DNS records. Unfortunately for defenders, many DNS providers have loose standards and provide APIs to make it even easier for the attacker to change the domain."
+
+![Domain Sodinokibi C2s](THM Sodinokibi C2 domains.png)
+
+![Domain Punycode Example](THM Mod 2 - Domain Punycode.png)
+
+The module goes on to explain the use of URL shorteners, and how they are commonly used to hide malicious domain names, and provides a potential negation tactic in appending a '+' to the shortened URL to see the full domain you are being directed to. For example, "http://bit.ly/275hf9**+**" would show the actual destination of that link. Next, we circle back to the ever-so-useful any.run. Being a sandboxing service that executes a sample, it allows us to review connections such as HTTP or DNS requests, or see any processes attempting to communicate with an external IP. 
+
+Finally, we're given an actual sandboxed file on AnyRun, and asked to answer the following questions by analzying the information in the pictured report:
+
+![Sandbox AnyRun](THM Mod 2 AnyRun Sandbox.png)
+
+
+![THM Mod 2 Q+A](THM Mod 2 - Q + A.png)
+
+
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
