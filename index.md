@@ -230,9 +230,9 @@ The UKC is more modern & detailed than many other frameworks, and is meant to be
 
 ### UKC Phases - In, Through, Out
 
-In: Initial Foothold - Recon, Weaponization, Social Engineering, Exploitation, Persistence, Defence Evasion, C2, Pivoting
-Through: Network Propagation - Pivoting, Disocvery, Privilege Escalation, Execution, Credential Access, Lateral Movement
-Out: Action on Objectives - Collection, Exfiltration, Impact
+*  In: Initial Foothold - Recon, Weaponization, Social Engineering, Exploitation, Persistence, Defence Evasion, C2, Pivoting
+*  Through: Network Propagation - Pivoting, Disocvery, Privilege Escalation, Execution, Credential Access, Lateral Movement
+*  Out: Action on Objectives - Collection, Exfiltration, Impact
 
 ### UKC - Practical
 
@@ -245,6 +245,10 @@ Another module finished!
 ![UKC Conclusion](THM Mod 4 - Conclusion.png)
 
 
+## Module 5 - Diamond Model
 
+We begin Module 5, and are introduced to the Diamond Model!
+
+![Diamond Model](THM Mod 5 - Diamond Model Intro.png)
 
 
