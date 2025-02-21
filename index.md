@@ -2,10 +2,6 @@
 layout: default
 ---
 
-Thanks for visiting my portfolio! What will follow is a rough outline of the various aspects of my hands-on learning & experience in the realm of cyberecurity - this **is not meant to be comprehensive**, but rather to highlight & quantify some of the tangible skills and techniques that I've practiced. 
-I currently hold, among others, active Security+ and Network+ certifications from CompTIA (which hopefully verify at least some level of foundational knowledge), so the projects here will likely be more technical and role-specific as opposed to generalized knowledge. 
-
-
 # TryHackMe - SOC Level 1
 
 ![THM SOCL1 Icon](TryHackMe SOC L1 Icon.png)
