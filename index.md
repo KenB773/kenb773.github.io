@@ -251,4 +251,44 @@ We begin Module 5, and are introduced to the Diamond Model!
 
 ![Diamond Model](THM Mod 5 - Diamond Model Intro.png)
 
+### Diamond Model 5 - Practical & Conclusion
+
+After several short sections of review with some questions along the way, we create our own Diamond Model on the 2016 Ukrainian Power Grid Attacks, using [this case study](https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2016/05/20081514/E-ISAC_SANS_Ukraine_DUC_5.pdf).
+
+## Module 6 - MITRE
+
+Now we get to dive into MITRE and their many, many contributions to the world of cybersecurity! CVEs, ATT&CK, CAR, Engage, D3FEND, AEP and more.
+
+### MITRE - ATT&CK
+
+Per THM:
+"What is the ATT&CK® framework? According to the website, "MITRE ATT&CK® is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations." In 2013, MITRE began to address the need to record and document common TTPs (Tactics, Techniques, and Procedures) that APT (Advanced Persistent Threat) groups used against enterprise Windows networks. This started with an internal project known as FMX (Fort Meade Experiment). Within this project, selected security professionals were tasked to emulated adversarial TTPs against a network, and data was collected from the attacks on this network. The gathered data helped construct the beginning pieces of what we know today as the ATT&CK® framework.
+
+The ATT&CK® framework has grown and expanded throughout the years. One notable expansion was that the framework focused solely on the Windows platform but has expanded to cover other platforms, such as macOS and Linux. The framework is heavily contributed to by many sources, such as security researchers and threat intelligence reports. Note this is not only a tool for blue teamers. The tool is also useful for red teamers."
+
+![ATTCK NAV](THM Mod 6 ATT&CK Nav.png)
+
+We start to use the ATT&CK Framework + Navigator to answer various questions regarding specific groups, their overlap with others, software used by them and its definitions, and techniques attributed to specific APTs.
+
+### MITRE Cyber Analytics Repository (CAR)
+
+We review various pages and learn how to use the analytics provided. CAR Analytics go deeper than Mitigations & Detection in the ATT&CK framework, and therefore is a very useful addition to be used alongside it.
+
+### MITRE Engage Matrix
+
+![MITRE ENGAGE](THM MITRE ENGAGE Matrix.png)
+
+We are introduced to the Engage Matrix. This is considered an Adversary Engagement Approach, and is accomplished by the implementation of Cyber Denial and Cyber Deception. 
+
+*  Prepare the set of operational actions that will lead to your desired outcome (input).
+*  Expose adversaries when they trigger your deployed deception activities.
+*  Affect adversaries by performing actions that will have a negative impact on their operations.
+*  Elicit information by observing the adversary and learn more about their modus operandi (TTPs).
+*  Understand the outcomes of the operational actions (output).
+
+![Engage Gif](Engage Matrix Gif.gif)
+
+We engage with Engage (haha) and use the matrix and some tools/worksheets to answer a few questions about it.
+
+### MITRE D3FEND
 
