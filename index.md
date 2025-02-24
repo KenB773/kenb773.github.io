@@ -5,4 +5,4 @@
 ### [Home SOC Setup](homesoc.md)
 
 ## Resume
-### [Resume](resume.md)
+### [Resume](Resume.md)
