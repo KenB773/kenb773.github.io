@@ -6,3 +6,5 @@
 
 ## Resume
 ### [Resume](Resume.pdf)
+### [AZ-900 Certificate](AZ900 Cert.png) (Microsoft no longer works with Cred.ly, so I can't add it to my profile with the other certificates).
+
