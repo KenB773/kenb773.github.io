@@ -5,4 +5,4 @@
 ### [Home SOC Setup](homesoc.md)
 
 ## Resume
-### [Resume](Resume 2.pdf)
+### [Resume](Resume.pdf)
