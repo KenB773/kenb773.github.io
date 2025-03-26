@@ -19,7 +19,7 @@ def lambda_handler(event, context):
         key = record['s3']['object']['key']
         size = record['s3']['object'].get('size', 0)
 
-         file_type = os.path.splitext(key)[1].lower()
+        file_type = os.path.splitext(key)[1].lower()
 
         try:
             # Store metadata in DynamoDB
