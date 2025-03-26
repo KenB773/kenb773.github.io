@@ -1,5 +1,7 @@
 # Welcome to my portfolio! 
 
+If you don't know me, [here's a brief introduction](intro.md)!
+
 ## Projects
 ### [TryHackMe SOC Level 1](thmsoclevel1.md)
 
