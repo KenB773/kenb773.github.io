@@ -7,8 +7,8 @@ s3 = boto3.client('s3')
 dynamodb = boto3.resource('dynamodb')
 sns = boto3.client('sns')
 
-TABLE_NAME = 'FileMetadata'
-SNS_TOPIC_ARN = 'arn:aws:sns:your-region:your-account-id:ScalperAlerts'
+TABLE_NAME = 'SS-FileMetadata'
+SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:471303021226:SSAlerts'
 QUARANTINE_BUCKET = 'silent-scalper-quarantine-test'
 
 def lambda_handler(event, context):
