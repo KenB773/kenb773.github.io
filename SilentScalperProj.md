@@ -1,17 +1,17 @@
 # Silent Scalper
 
-## 🚀 Project Summary
+## Project Summary
 
-**Silent Scalper** is a serverless data pipeline designed to solve two common problems in cloud-based systems:
+**Silent Scalper** is my first AWS project! After completing AWS Certified Cloud Practitioner and Certified Cloud Architect - Associate, I felt it was time to go more hands-on and get some practical experience working with these systems before continuing on the certification path. My Silent Scalper is a serverless data pipeline designed to solve two common problems in (inadequately architected) cloud-based systems:
 
-- 💸 **Wasting money on idle compute** (servers sitting idle when there’s no work to do)
-- 💥 **Crashing during traffic spikes** (overloaded infrastructure from sudden file dumps)
+-  **Wasting money on idle compute** (servers sitting idle when there’s no work to be done)
+-  **Crashing during traffic spikes** (overloaded infrastructure from sudden file dumps)
 
-This project uses AWS native services to create a responsive, cost-effective solution that automatically processes incoming files with zero manual provisioning.
+This project uses AWS native services to create a responsive, cost-effective solution that automatically processes incoming files with no manual provisioning.
 
 ---
 
-## 📐 Architecture Overview
+##  Architecture Overview
 
 ```
 Uploader ──▶ S3 Bucket ──▶ Lambda Function
@@ -26,7 +26,7 @@ Uploader ──▶ S3 Bucket ──▶ Lambda Function
 
 ---
 
-## 🔧 Key Features
+##  Key Features
 
 - ✅ Event-driven compute triggered on file upload
 - ✅ Scales automatically — no idle infrastructure
@@ -37,7 +37,7 @@ Uploader ──▶ S3 Bucket ──▶ Lambda Function
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 **AWS Services:**
 
@@ -52,41 +52,53 @@ Uploader ──▶ S3 Bucket ──▶ Lambda Function
 
 ---
 
-## 🧪 How It Works
+##  How It Works
 
-1. A file is uploaded to the `silent-scalper-input` S3 bucket
+1. A file is uploaded to the `silent-scalper-input-testcase` S3 bucket
 2. S3 triggers a Lambda function
 3. Lambda extracts metadata: filename, size, timestamp
-4. The metadata is stored in a DynamoDB table (`FileMetadata`)
-5. An SNS topic (`ScalperAlerts`) sends a notification email
+4. The metadata is stored in a DynamoDB table (`SS-FileMetadata`)
+5. An SNS topic (`SSAlerts`) sends a notification email
 6. If an error occurs, the file is moved to a quarantine bucket
 7. Logs and alerts are published to CloudWatch
 
 ---
 
-## 🔐 Security & Cost
+##  Security & Cost
 
-- IAM policies follow least-privilege principle
-- Entire project fits within the AWS Free Tier:
+- Entire project should fit within the AWS Free Tier:
   - ✅ 1M Lambda invocations/month
   - ✅ 5GB S3 storage
   - ✅ 25GB DynamoDB storage
   - ✅ 1M SNS publishes
   - ✅ 5GB CloudWatch logs
+- IAM role for the Lambda function is using managed policies (for the sake of simplicity) in this test case, but could easily be made to follow a preferable least-privilege principle using an inline policy. The JSON for it would look something like this:
+
+[InlinePermsJSON](Lambda Inline Least Privilege Permissions 1.png)
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-> *(Add screenshots here for: Lambda logs, SNS alert email, DynamoDB entry, S3 quarantine bucket, etc.)*
+[LambdaPython](Lambda Function Python.png)
+
+[LambdaPerms](SS Lambda Role Permissions.png)
+
+[S3Bucket](S3 Bucket SS.png)
+
+[SSSNS](SS SNS Alerts.png)
+
+[CloudWatchLog](CloudWatch Log.png)
+
+[SNSEmail](SNS Email.png)
 
 ---
 
-## 💬 Reflections
+## Reflections
 
 This project was a hands-on exploration of real-world AWS architecture patterns. I wanted to build something that responded to real problems: wasteful compute and fragile scaling. Silent Scalper uses serverless tools to build a lean, resilient, and automated system that handles high-volume file ingestion with ease.
 
-Next steps may include:
+Next features I plan to include:
 
 - Adding automated retries from the quarantine bucket
 - Integrating with a web dashboard for file tracking
@@ -94,13 +106,8 @@ Next steps may include:
 
 ---
 
-## 🔗 GitHub Repository
+##  Architecture Diagram
 
-> [GitHub Link Here]
+[ArchDrawio](SSArchitectureDrawio.png)
 
-## 🗺️ Architecture Diagram
-
->
-
-*(Or insert draw\.io / Lucidchart link if interactive)*
 
