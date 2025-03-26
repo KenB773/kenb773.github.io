@@ -57,7 +57,7 @@ Uploader ──▶ S3 Bucket ──▶ Lambda Function
 1. A file is uploaded to the `silent-scalper-input-testcase` S3 bucket
 2. S3 triggers a Lambda function
 3. Lambda extracts metadata: filename, size, timestamp
-4. The metadata is stored in a DynamoDB table (`SS-FileMetadata`)
+4. The metadata is stored in a DynamoDB table with GSI for easy queries (`SS-FileMetadata`)
 5. An SNS topic (`SSAlerts`) sends a notification email
 6. If an error occurs, the file is moved to a quarantine bucket (`silent-scalper-quarantine-test`)
 7. Logs and alerts are published to CloudWatch
@@ -89,6 +89,8 @@ Uploader ──▶ S3 Bucket ──▶ Lambda Function
 ![CloudWatchLog](CloudWatch Log.png)
 
 ![SNSEmail](SNS Email.png)
+
+![DDB GSI](SS DDB GSI.png)
 
 ---
 
