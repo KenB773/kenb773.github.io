@@ -74,7 +74,7 @@ Uploader ──▶ S3 Bucket ──▶ Lambda Function
   - ✅ 5GB CloudWatch logs
 - IAM role for the Lambda function is using managed policies (for the sake of simplicity) in this test case, but could easily be made to follow a preferable least-privilege principle using an inline policy. The JSON for it would look something like this:
 
-[InlinePermsJSON](Lambda Inline Least Privilege Permissions 1.png)
+![InlinePermsJSON](Lambda Inline Least Privilege Permissions 1.png)
 
 ---
 
