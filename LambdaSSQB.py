@@ -13,9 +13,13 @@ QUARANTINE_BUCKET = 'silent-scalper-quarantine-test'
 
 def lambda_handler(event, context):
     for record in event['Records']:
+        start_time = time.time()
+        
         bucket = record['s3']['bucket']['name']
         key = record['s3']['object']['key']
         size = record['s3']['object'].get('size', 0)
+
+         file_type = os.path.splitext(key)[1].lower()
 
         try:
             # Store metadata in DynamoDB
@@ -24,7 +28,9 @@ def lambda_handler(event, context):
                 'FileName': key,
                 'Size': size,
                 'Bucket': bucket,
-                'TimeStamp': int(time.time())
+                'FileType': file_type,
+                'TimeStamp': int(start_time),
+                'Duration': round(time.time() - start_time, 3)
             })
 
             # Send success alert
