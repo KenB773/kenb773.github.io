@@ -80,17 +80,17 @@ Uploader ──▶ S3 Bucket ──▶ Lambda Function
 
 ## Screenshots
 
-[LambdaPython](Lambda Function Python.png)
+![LambdaPython](Lambda Function Python.png)
 
-[LambdaPerms](SS Lambda Role Permissions.png)
+![LambdaPerms](SS Lambda Role Permissions.png)
 
-[S3Bucket](S3 Bucket SS.png)
+![S3Bucket](S3 Bucket SS.png)
 
-[SSSNS](SS SNS Alerts.png)
+![SSSNS](SS SNS Alerts.png)
 
-[CloudWatchLog](CloudWatch Log.png)
+![CloudWatchLog](CloudWatch Log.png)
 
-[SNSEmail](SNS Email.png)
+![SNSEmail](SNS Email.png)
 
 ---
 
@@ -108,6 +108,6 @@ Next features I plan to include:
 
 ##  Architecture Diagram
 
-[ArchDrawio](SSArchitectureDrawio.png)
+![ArchDrawio](SSArchitectureDrawio.png)
 
 
