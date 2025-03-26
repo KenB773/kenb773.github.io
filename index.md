@@ -3,6 +3,8 @@
 ## Projects
 ### [TryHackMe SOC Level 1](thmsoclevel1.md)
 ### [Home SOC Setup](homesoc.md)
+### [AWS PartyRock - JargonBridge GenAI App](https://partyrock.aws/u/KenB7/1nIRFrtOV/JargonBridge)
+-  [Example input/output snapshot](https://partyrock.aws/u/KenB7/1nIRFrtOV/JargonBridge/snapshot/uSOLqiDLE)
 
 ## Resume
 ### [Resume](Resume4.pdf)
