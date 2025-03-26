@@ -48,7 +48,7 @@ Uploader ──▶ S3 Bucket ──▶ Lambda Function
 - CloudWatch (logs + metrics)
 - IAM (roles and permissions)
 
-**Runtime:** Python 3.12 (AWS Lambda)
+**Runtime:** Python 3.12 (AWS Lambda) - [Click here to see the full Python script used in this function](LambdaSSQB.py)
 
 ---
 
@@ -59,7 +59,7 @@ Uploader ──▶ S3 Bucket ──▶ Lambda Function
 3. Lambda extracts metadata: filename, size, timestamp
 4. The metadata is stored in a DynamoDB table (`SS-FileMetadata`)
 5. An SNS topic (`SSAlerts`) sends a notification email
-6. If an error occurs, the file is moved to a quarantine bucket
+6. If an error occurs, the file is moved to a quarantine bucket (`silent-scalper-quarantine-test`)
 7. Logs and alerts are published to CloudWatch
 
 ---
@@ -72,15 +72,13 @@ Uploader ──▶ S3 Bucket ──▶ Lambda Function
   - ✅ 25GB DynamoDB storage
   - ✅ 1M SNS publishes
   - ✅ 5GB CloudWatch logs
-- IAM role for the Lambda function is using managed policies (for the sake of simplicity) in this test case, but could easily be made to follow a preferable least-privilege principle using an inline policy. The JSON for it would look something like this:
+- IAM role for the Lambda function originally used managed policies (for the sake of simplicity) in this test case, but was made to follow a preferable least-privilege principle using an inline policy after confirming function. This is the policy used:
 
-![InlinePermsJSON](Lambda Inline Least Privilege Permissions 1.png)
+![InlinePermsJSON](InlineLeastPrivQ.png)
 
 ---
 
 ## Screenshots
-
-![LambdaPython](Lambda Function Python.png)
 
 ![LambdaPerms](SS Lambda Role Permissions.png)
 
@@ -96,13 +94,13 @@ Uploader ──▶ S3 Bucket ──▶ Lambda Function
 
 ## Reflections
 
-This project was a hands-on exploration of real-world AWS architecture patterns. I wanted to build something that responded to real problems: wasteful compute and fragile scaling. Silent Scalper uses serverless tools to build a lean, resilient, and automated system that handles high-volume file ingestion with ease.
+This project was a hands-on exploration of real-world AWS architecture patterns. I primarily wanted to finally and actually build something in AWS, but I also wanted it to be practical in the real world - hence the two common issues targeted here: wasteful compute and fragile scaling. Silent Scalper uses serverless tools to build a lean, resilient, and automated system that handles high-volume file ingestion with ease.
 
 Next features I plan to include:
 
 - Adding automated retries from the quarantine bucket
 - Integrating with a web dashboard for file tracking
-- Logging file types and processing durations for analytics
+- ~~Logging file types and processing durations for analytics~~ Added! See what was changed in Lambda [in this Python file](FileProcChanges.py).
 
 ---
 
