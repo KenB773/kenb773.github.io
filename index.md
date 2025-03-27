@@ -13,7 +13,7 @@ If you don't know me, [here's a brief introduction](intro.md)!
 ### [AWS 'Silent Scalper' project](SilentScalperProj.md) - Serverless data pipeline. Using event-driven AWS architecture, my 'Silent Scalper' processes incoming files the moment they’re uploaded (without pre-provisioned infrastructure), scales automatically, and gracefully handles both success and failure paths. Aims to eliminate idle compute waste, as well as file loss resulting from crashes during unpredictable traffic spikes.
 
 ## Resume
-### [Resume](Resume4.pdf)
+### [Resume](Resume (3).pdf)
 ### [Credly Profile](https://www.credly.com/users/mackenzie-brigham)
 ### [AZ-900 Certificate](AZ900 Cert.png) (Microsoft no longer works with Credly, so I can't add it to my profile with the other certificates).
 
