@@ -2,7 +2,7 @@
 
 ## Project Summary
 
-**Silent Scalper** is my first AWS project! After completing AWS Certified Cloud Practitioner and Certified Cloud Architect - Associate, I felt it was time to go more hands-on and get some practical experience working with these systems before continuing on the certification path. My Silent Scalper is a serverless data pipeline designed to solve two common problems in (inadequately architected) cloud-based systems:
+**Silent Scalper** is my first AWS project! After completing AWS Certified Cloud Practitioner and Certified Solutions Architect - Associate, I felt it was time to go more hands-on and get some practical experience working with these systems before continuing on the certification path. My Silent Scalper is a serverless data pipeline designed to solve two common problems in (inadequately architected) cloud-based systems:
 
 -  **Wasting money on idle compute** (servers sitting idle when there’s no work to be done)
 -  **Crashing during traffic spikes** (overloaded infrastructure from sudden file dumps)
