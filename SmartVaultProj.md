@@ -67,8 +67,6 @@ The system is designed to minimize storage costs while providing traceable, auto
 
 ![EventBridgeSched](EventBridge Schedule.png)
 
-![LambdaCleanupAudit](Lambda Cleanup Audit.png)
-
 ![LambdaIAM](LambdaIAMPermissions.png)
 
 ![CloudWatchLog](CloudWatch Log.png)
