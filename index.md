@@ -5,7 +5,7 @@ If you don't know me, [here's a brief introduction](intro.md)!
 ## Projects
 ### [TryHackMe SOC Level 1](thmsoclevel1.md)
 
-### [Home SOC Setup](homesoc.md)
+### [Azure-based Home SOC Setup](homesoc.md) - My Home SOC is a functional personal cloud security operations center built on Azure services, featuring log ingestion with Log Analytics, real-time alerting via Azure Monitor, and custom detection rules for tracking suspicious activity across a simulated home network.
 
 ### [AWS PartyRock - JargonBridge GenAI App](https://partyrock.aws/u/KenB7/1nIRFrtOV/JargonBridge) - A fun little Gen AI PartyRock tool I created for bidirectionally converting technical jargon and plain english. Includes a basic Claude-powered chatbot that can answer questions about terms used and its thought process behind the 'translations'.
 -  [Example input/output snapshot](https://partyrock.aws/u/KenB7/1nIRFrtOV/JargonBridge/snapshot/jHsfSVHf4)
