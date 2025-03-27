@@ -1,4 +1,4 @@
-# 📂 Smart Vault: Automated EBS Backup System
+# Smart Vault: Automated EBS Backup System with DynamoDB logging
 
 ## Overview
 My second project! This time I around I decided to create a **Smart Vault** - it's a serverless, tag-based backup automation system that creates and manages Amazon EBS snapshots for EC2 instances. It uses EventBridge to trigger AWS Lambda functions that:
@@ -52,7 +52,7 @@ The system is designed to minimize storage costs while providing traceable, auto
 ---
 
 ## Tech Stack
-- **AWS Lambda** (Python)
+- **AWS Lambda** (Python) - Check out the [Smart Vault backup function code here](Lambda SmartVault.py), and then the [Auto Cleanup/DynamoDB Audit function here](Lambda Cleanup Audit.py).
 - **Amazon EC2 / EBS**
 - **Amazon EventBridge**
 - **Amazon DynamoDB**
@@ -63,17 +63,25 @@ The system is designed to minimize storage costs while providing traceable, auto
 
 ## Screenshots
 
+![EventBridgeCron](EventBridge Cron.png)
+
+![EventBridgeSched](EventBridge Schedule.png)
+
+![LambdaCleanupAudit](Lambda Cleanup Audit.png)
+
+![LambdaIAM](LambdaIAMPermissions.png)
+
+![CloudWatchLog](CloudWatch Log.png)
+
+![EC2Launch](EC2 Launch.png)
 
 ---
 
 ## Future Improvements
-- ⏰ Notification system via SNS or Slack
-- 🌐 Web UI for audit log visualization
-- ♻️ Snapshot restore utility
-- 🔄 EC2 volume-to-S3 archival (long term)
+-  Notification system via SNS
+-  Web UI for audit log visualization
+-  Snapshot restore utility
+-  EC2 volume-to-S3 archival (long term)
 
 ---
-
-## GitHub Repo
-**[Coming Soon]**
 
