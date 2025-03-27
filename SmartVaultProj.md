@@ -1,10 +1,11 @@
 # 📂 Smart Vault: Automated EBS Backup System
 
 ## Overview
-**Smart Vault** is a serverless, tag-based backup automation system that creates and manages Amazon EBS snapshots for EC2 instances. It uses EventBridge to trigger AWS Lambda functions that:
+My second project! This time I around I decided to create a **Smart Vault** - it's a serverless, tag-based backup automation system that creates and manages Amazon EBS snapshots for EC2 instances. It uses EventBridge to trigger AWS Lambda functions that:
+
 - Create snapshots for tagged EC2 instances
 - Store audit logs in DynamoDB
-- Clean up expired snapshots based on retention policies
+- Clean up expired snapshots based on customizable retention policies
 
 The system is designed to minimize storage costs while providing traceable, automated protection for instance data.
 
@@ -61,11 +62,7 @@ The system is designed to minimize storage costs while providing traceable, auto
 ---
 
 ## Screenshots
-_(To be added)_
-- Lambda function logs
-- EventBridge rules
-- DynamoDB audit entries
-- EBS snapshot list with tags
+
 
 ---
 
