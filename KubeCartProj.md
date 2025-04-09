@@ -1,7 +1,7 @@
 # KubeCart – Flask Microservice on AWS EKS
 
-**Live Demo:** [http://a2a513d41c3964ed9aa41c0269d14c62-1950382880.us-east-1.elb.amazonaws.com](http://a2a513d41c3964ed9aa41c0269d14c62-1950382880.us-east-1.elb.amazonaws.com) 
-**Swagger Docs:** [http://a2a513d41c3964ed9aa41c0269d14c62-1950382880.us-east-1.elb.amazonaws.com/swagger](http://a2a513d41c3964ed9aa41c0269d14c62-1950382880.us-east-1.elb.amazonaws.com/swagger)
+**Live Demo:**   [http://a2a513d41c3964ed9aa41c0269d14c62-1950382880.us-east-1.elb.amazonaws.com](http://a2a513d41c3964ed9aa41c0269d14c62-1950382880.us-east-1.elb.amazonaws.com) 
+**Swagger Docs:**   [http://a2a513d41c3964ed9aa41c0269d14c62-1950382880.us-east-1.elb.amazonaws.com/swagger](http://a2a513d41c3964ed9aa41c0269d14c62-1950382880.us-east-1.elb.amazonaws.com/swagger)
 
 **[View the KubeCart Repository](https://github.com/KenB773/KubeCart)**
 
