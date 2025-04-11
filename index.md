@@ -3,7 +3,8 @@
 If you don't know me, [here's a brief introduction](intro.md)!
 
 ## Projects
-### [TryHackMe SOC Level 1](thmsoclevel1.md)
+
+### [3-Tier Web App](3TierWebAppProj.md) - A full-stack, 3-tier Node.js web application on AWS using ECS Fargate, ALB, and RDS PostgreSQL, fully provisioned through Terraform and containerized with Docker. The project includes health checks, secure DB connectivity via SSL, and modular infrastructure-as-code for production-style scalability.
 
 ### [Docker/Kubernetes/AWS EKS/Flask - 'KubeCart' project](KubeCartProj.md) - KubeCart is a containerized Flask microservice simulating a basic shopping cart API, deployed to AWS using Kubernetes (EKS) and exposed via a public Load Balancer. It features a live Swagger UI for testing endpoints, built using Flask-RESTX and deployed with Docker, eksctl, and kubectl.
 
@@ -16,8 +17,9 @@ If you don't know me, [here's a brief introduction](intro.md)!
 
 ### [AWS 'Smart Vault' project](SmartVaultProj.md) - Serverless AWS automation tool - my 'Smart Vault' is used to create, tag, and manage EBS snapshots for EC2 instances based on resource tags. It features scheduled backups, audit logging via DynamoDB, and automated cleanup to reduce storage costs.
 
-## Resume
+### [TryHackMe SOC Level 1](thmsoclevel1.md)
+
+## Resume + Credentials
 ### [Resume](Resume New.pdf)
 ### [Credly Profile](https://www.credly.com/users/mackenzie-brigham)
-### [AZ-900 Certificate](AZ900 Cert.png) (Microsoft no longer works with Credly, so I can't add it to my profile with the other certificates).
 
