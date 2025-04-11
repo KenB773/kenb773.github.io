@@ -21,4 +21,4 @@ This project showcases a production-style 3-tier architecture deployed entirely 
 - Secure RDS integration with enforced SSL
 - Built with Terraform modules and Docker for CI/CD readiness
 
-[View the GitHub Repository](https://github.com/KenB773/3TierWebAppTerraform)
+[View the GitHub Repository!](https://github.com/KenB773/3TierWebAppTerraform)
