@@ -6,7 +6,7 @@ If you don't know me, [here's a brief introduction](intro.md)!
 
 ### [3-Tier Web App](3TierWebAppProj.md) - A full-stack, 3-tier Node.js web application on AWS using ECS Fargate, ALB, and RDS PostgreSQL, fully provisioned through Terraform and containerized with Docker. The project includes health checks, secure DB connectivity via SSL, and modular infrastructure-as-code for production-style scalability.
 
-### [Docker/Kubernetes/AWS EKS/Flask - 'KubeCart' project](KubeCartProj.md) - KubeCart is a containerized Flask microservice simulating a basic shopping cart API, deployed to AWS using Kubernetes (EKS) and exposed via a public Load Balancer. It features a live Swagger UI for testing endpoints, built using Flask-RESTX and deployed with Docker, eksctl, and kubectl.
+### ['KubeCart' project](KubeCartProj.md) - KubeCart is a containerized Flask microservice simulating a basic shopping cart API, deployed to AWS using Kubernetes (EKS) and exposed via a public Load Balancer. It features a live Swagger UI for testing endpoints, built using Flask-RESTX and deployed with Docker, eksctl, and kubectl.
 
 ### [Azure-based Home SOC Setup](homesoc.md) - My Home SOC is a functional personal cloud security operations center built on Azure services, featuring log ingestion with Log Analytics, real-time alerting via Azure Monitor, and custom detection rules for tracking suspicious activity across a simulated home network.
 
