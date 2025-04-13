@@ -8,6 +8,8 @@ If you don't know me, [here's a brief introduction](intro.md)!
 
 ### ['KubeCart' project](KubeCartProj.md) - KubeCart is a containerized Flask microservice simulating a basic shopping cart API, deployed to AWS using Kubernetes (EKS) and exposed via a public Load Balancer. It features a live Swagger UI for testing endpoints, built using Flask-RESTX and deployed with Docker, eksctl, and kubectl.
 
+### [Automated CI/CD Security Scan Pipeline](https://github.com/KenB773/SecurityScanPipeline) - A GitHub Actions pipeline that integrates Trivy, Checkov, Bandit, and OWASP Dependency-Check to automatically scan code, containers, and infrastructure for vulnerabilities — complete with SARIF reporting for GitHub Security.
+
 ### [Azure-based Home SOC Setup](homesoc.md) - My Home SOC is a functional personal cloud security operations center built on Azure services, featuring log ingestion with Log Analytics, real-time alerting via Azure Monitor, and custom detection rules for tracking suspicious activity across a simulated home network.
 
 ### [AWS PartyRock - JargonBridge GenAI App](https://partyrock.aws/u/KenB7/1nIRFrtOV/JargonBridge) - A fun little Gen AI PartyRock tool I created for bidirectionally converting technical jargon and plain english. Includes a basic Claude-powered chatbot that can answer questions about terms used and its thought process behind the 'translations'.
