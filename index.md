@@ -4,6 +4,8 @@ If you don't know me, [here's a brief introduction](intro.md)!
 
 ## Projects
 
+### [Quick Incident Triage Toolkit](https://github.com/KenB773/QuickIncidentTriageToolkit) - A sleek, offline desktop app built with Rust, Tauri, and React for rapid system diagnostics. It visualizes real-time CPU, memory, disk, network, and process activity, and supports one-click data export to JSON.
+
 ### [AWS 3-Tier Web App](3TierWebAppProj.md) - A full-stack, 3-tier Node.js web application on AWS using ECS Fargate, ALB, and RDS PostgreSQL, fully provisioned through Terraform and containerized with Docker. The project includes health checks, secure DB connectivity via SSL, and modular infrastructure-as-code for production-style scalability.
 
 ### [AWS/GCP 'KubeCart' project](KubeCartProj.md) - KubeCart is a containerized Flask microservice simulating a basic shopping cart API, deployed to AWS using Kubernetes (EKS) and exposed via a public Load Balancer. It features a live Swagger UI for testing endpoints, built using Flask-RESTX and deployed with Docker, eksctl, and kubectl.
