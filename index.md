@@ -1,6 +1,6 @@
 # Welcome to my portfolio! 
 
-If you don't know me, [here's a brief introduction](intro.md)!
+Here you'll find my many projects! What started out as a focused page to document my cybersecurity work has evolved into much more - Dev(Sec)Ops, CI/CD, Full-Stack Web Development, Cloud Architecture & Engineering, Cloud Security, Red-Teaming, Blue-Teaming, Software Development and AI/ML. This has become something of a playground, workshop, and a digital map of where curiosity has led (and continues to lead) me. Thanks for checking it out.
 
 ## Projects
 
