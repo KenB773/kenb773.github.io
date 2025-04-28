@@ -1,5 +1,6 @@
 <head>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <style>
@@ -63,38 +64,54 @@
     }
 </style>
 
-<div class="flex items-center justify-center space-x-2 mb-4">
-  <i class="fas fa-shield-halved text-blue-400 text-3xl"></i>
-  <span class="text-3xl font-bold text-blue-300">Ken Brigham</span>
-</div>
+<!-- Wrapper div to isolate HTML from the rest of Markdown -->
+<div style="margin-bottom: 2rem;">
 
-<!-- Hero Section -->
-<section class="cyber-gradient py-20 px-6">
-    <div class="container mx-auto flex flex-col md:flex-row items-center">
-        <div class="md:w-1/2 mb-10 md:mb-0">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4 neon-text">Building & Securing a Cloud-Enabled, AI-Powered Future</h1>
-            <p class="text-xl text-blue-200 mb-8">Cybersecurity | Cloud Operations & Security | Dev(Sec)Ops Engineer | AI/ML Ops </p>
-        </div>
-        <div class="md:w-1/2 flex justify-center">
-            <div class="terminal w-full max-w-md">
-                <div class="terminal-header">
-                    <span class="terminal-dot bg-red-500"></span>
-                    <span class="terminal-dot bg-yellow-500"></span>
-                    <span class="terminal-dot bg-green-500"></span>
-                </div>
-                <div class="terminal-content">
-                    <p><span class="command">$ whoami</span></p>
-                    <p class="response mb-4">Ken Brigham - Security & Cloud Specialist</p>
-                    <p><span class="command">$ skills --cybersecurity --cloud --devsecops --ai</span></p>
-                    <p class="response mb-4">Cybersecurity | Cloud Operations & Security | Dev(Sec)Ops Engineer | AI/ML Ops</p>
-                    <p><span class="command">$ contact --method=email</span></p>
-                    <p class="response">kenbrigham777@gmail.com</p>
-                    <p><span class="command">$ _</span><span class="cursor"></span></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+  <!-- Name Header (Centered) -->
+  <div class="flex items-center justify-center space-x-2 mb-8">
+    <i class="fas fa-shield-halved text-blue-400 text-3xl"></i>
+    <span class="text-3xl font-bold text-blue-300">Ken Brigham</span>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="cyber-gradient py-20 px-6 rounded-lg">
+      <div class="container mx-auto flex flex-col md:flex-row items-center">
+
+          <div class="md:w-1/2 mb-10 md:mb-0">
+              <h1 class="text-4xl md:text-5xl font-bold mb-4 neon-text">Building & Securing a Cloud-Enabled, AI-Powered Future</h1>
+              <p class="text-xl text-blue-200 mb-8">Cybersecurity | Cloud Operations & Security | Dev(Sec)Ops Engineer | AI/ML Ops </p>
+              <div class="flex space-x-4">
+                  <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg font-medium transition">Get In Touch</a>
+                  <a href="#projects" class="border border-blue-400 hover:bg-blue-900 text-blue-400 px-6 py-3 rounded-lg font-medium transition">View Projects</a>
+              </div>
+          </div>
+
+          <div class="md:w-1/2 flex justify-center">
+              <div class="terminal w-full max-w-md">
+                  <div class="terminal-header">
+                      <span class="terminal-dot bg-red-500"></span>
+                      <span class="terminal-dot bg-yellow-500"></span>
+                      <span class="terminal-dot bg-green-500"></span>
+                  </div>
+                  <div class="terminal-content">
+                      <p><span class="command">$ whoami</span></p>
+                      <p class="response mb-4">Ken Brigham - Security & Cloud Specialist</p>
+
+                      <p><span class="command">$ skills --cybersecurity --cloud --devsecops --ai</span></p>
+                      <p class="response mb-4">Cybersecurity | Cloud Operations & Security | Dev(Sec)Ops Engineer | AI/ML Ops</p>
+
+                      <p><span class="command">$ contact --method=email</span></p>
+                      <p class="response">kenbrigham777@gmail.com</p>
+
+                      <p><span class="command">$ _</span><span class="cursor"></span></p>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </section>
+
+</div>
 
 ---
 
