@@ -4,7 +4,7 @@
 
 <style>
     .cyber-gradient {
-        background: linear-gradient(135deg, #0f172a 0%, #1e40af 50%, #0ea5e9 100%);
+        background: linear-gradient(135deg, #1e293b 0%, #1b1b1b 50%, #1a1a1a 100%);
     }
     .neon-text {
         text-shadow: 0 0 5px #3b82f6, 0 0 10px #3b82f6;
