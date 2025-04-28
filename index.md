@@ -63,6 +63,11 @@
     }
 </style>
 
+<div class="flex items-center justify-center space-x-2 mb-4">
+  <i class="fas fa-shield-halved text-blue-400 text-3xl"></i>
+  <span class="text-3xl font-bold text-blue-300">Ken Brigham</span>
+</div>
+
 <!-- Hero Section -->
 <section class="cyber-gradient py-20 px-6">
     <div class="container mx-auto flex flex-col md:flex-row items-center">
