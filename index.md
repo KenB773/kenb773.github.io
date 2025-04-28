@@ -4,7 +4,7 @@
 
 <style>
     .cyber-gradient {
-        background: linear-gradient(135deg, #1e293b 0%, #1b1b1b 50%, #1a1a1a 100%);
+        background: linear-gradient(135deg, #1c1c1c 0%, #1b1b1b 50%, #1a1a1a 100%);
     }
     .neon-text {
         text-shadow: 0 0 5px #3b82f6, 0 0 10px #3b82f6;
@@ -91,7 +91,7 @@
     </div>
 </section>
 
-Welcome - here you'll find my many projects! What started out as a focused page to document cybersecurity work has evolved into much more - Dev(Sec)Ops, CI/CD, Full-Stack Web Development, Cloud Architecture & Engineering, Cloud Security, Software Development and of course, AI/ML. This has become something of a playground, workshop, and a digital map of where curiosity has led (and continues to lead) me. Thanks for checking it out.
+---
 
 ## Projects
 
