@@ -1,6 +1,97 @@
-# Welcome to my portfolio! 
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-Here you'll find my many projects! What started out as a focused page to document my cybersecurity work has evolved into much more - Dev(Sec)Ops, CI/CD, Full-Stack Web Development, Cloud Architecture & Engineering, Cloud Security, Red-Teaming, Blue-Teaming, Software Development and AI/ML. This has become something of a playground, workshop, and a digital map of where curiosity has led (and continues to lead) me. Thanks for checking it out.
+<style>
+    .cyber-gradient {
+        background: linear-gradient(135deg, #0f172a 0%, #1e40af 50%, #0ea5e9 100%);
+    }
+    .neon-text {
+        text-shadow: 0 0 5px #3b82f6, 0 0 10px #3b82f6;
+    }
+    .card-hover {
+        transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+    }
+    .terminal {
+        background-color: #0f172a;
+        border-radius: 8px;
+        font-family: 'Courier New', monospace;
+        position: relative;
+    }
+    .terminal-header {
+        background-color: #1e293b;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding: 8px 15px;
+    }
+    .terminal-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 6px;
+    }
+    .terminal-content {
+        padding: 20px;
+        color: #e2e8f0;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .command {
+        color: #10b981;
+    }
+    .response {
+        color: #e2e8f0;
+    }
+    .cursor {
+        display: inline-block;
+        width: 10px;
+        height: 18px;
+        background-color: #e2e8f0;
+        animation: blink 1s infinite;
+    }
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+    }
+    .hexagon {
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+</style>
+
+<!-- Hero Section -->
+<section class="cyber-gradient py-20 px-6">
+    <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 neon-text">Building & Securing a Cloud-Enabled, AI-Powered Future</h1>
+            <p class="text-xl text-blue-200 mb-8">Cybersecurity | Cloud Operations & Security | Dev(Sec)Ops Engineer | AI/ML Ops </p>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+            <div class="terminal w-full max-w-md">
+                <div class="terminal-header">
+                    <span class="terminal-dot bg-red-500"></span>
+                    <span class="terminal-dot bg-yellow-500"></span>
+                    <span class="terminal-dot bg-green-500"></span>
+                </div>
+                <div class="terminal-content">
+                    <p><span class="command">$ whoami</span></p>
+                    <p class="response mb-4">Ken Brigham - Security & Cloud Specialist</p>
+                    <p><span class="command">$ skills --cybersecurity --cloud --devsecops --ai</span></p>
+                    <p class="response mb-4">Cybersecurity | Cloud Operations & Security | Dev(Sec)Ops Engineer | AI/ML Ops</p>
+                    <p><span class="command">$ contact --method=email</span></p>
+                    <p class="response">kenbrigham777@gmail.com</p>
+                    <p><span class="command">$ _</span><span class="cursor"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+Welcome - here you'll find my many projects! What started out as a focused page to document cybersecurity work has evolved into much more - Dev(Sec)Ops, CI/CD, Full-Stack Web Development, Cloud Architecture & Engineering, Cloud Security, Software Development and of course, AI/ML. This has become something of a playground, workshop, and a digital map of where curiosity has led (and continues to lead) me. Thanks for checking it out.
 
 ## Projects
 
