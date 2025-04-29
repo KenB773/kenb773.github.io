@@ -205,7 +205,7 @@
 </section>
 
 <!-- Projects Section -->
-<section id="projects" class="py-20 px-6 bg-gray-800">
+<section id="projects" class="py-20 px-6 bg-custom-dark">
   <div class="container mx-auto">
     <h2 class="text-3xl font-bold mb-12 text-center">Projects</h2>
     <div class="grid md:grid-cols-2 gap-8">
