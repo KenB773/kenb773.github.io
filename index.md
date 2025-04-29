@@ -1,142 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ken Brigham | Cybersecurity, Cloud, AI</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-
-<style>
+  <style>
     .cyber-gradient {
-        background: linear-gradient(135deg, #1c1c1c 0%, #1b1b1b 50%, #1a1a1a 100%);
+      background: linear-gradient(135deg, #1c1c1c 0%, #1b1b1b 50%, #1a1a1a 100%);
     }
     .neon-text {
-        text-shadow: 0 0 5px #3b82f6, 0 0 10px #3b82f6;
+      text-shadow: 0 0 5px #3b82f6, 0 0 10px #3b82f6;
     }
-    .card-hover {
-        transition: all 0.3s ease;
-    }
-    .card-hover:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
-    }
-    .terminal {
-        background-color: #0f172a;
-        border-radius: 8px;
-        font-family: 'Courier New', monospace;
-        position: relative;
-    }
-    .terminal-header {
-        background-color: #1e293b;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-        padding: 8px 15px;
-    }
-    .terminal-dot {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        display: inline-block;
-        margin-right: 6px;
-    }
-    .terminal-content {
-        padding: 20px;
-        color: #e2e8f0;
-        font-size: 14px;
-        line-height: 1.6;
-    }
-    .command {
-        color: #10b981;
-    }
-    .response {
-        color: #e2e8f0;
-    }
-    .cursor {
-        display: inline-block;
-        width: 10px;
-        height: 18px;
-        background-color: #e2e8f0;
-        animation: blink 1s infinite;
-    }
-    @keyframes blink {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0; }
-    }
-    .hexagon {
-        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    }
-</style>
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3); }
+    .terminal { background-color: #0f172a; border-radius: 8px; font-family: 'Courier New', monospace; }
+    .terminal-header { background-color: #1e293b; border-top-left-radius: 8px; border-top-right-radius: 8px; padding: 8px 15px; }
+    .terminal-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; margin-right: 6px; }
+    .terminal-content { padding: 20px; color: #e2e8f0; font-size: 14px; line-height: 1.6; }
+    .command { color: #10b981; }
+    .response { color: #e2e8f0; }
+    .cursor { display: inline-block; width: 10px; height: 18px; background-color: #e2e8f0; animation: blink 1s infinite; }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+  </style>
+</head>
 
-<!-- Wrapper div to isolate HTML from the rest of Markdown -->
-<div style="margin-bottom: 2rem;">
+<body class="bg-gray-900 text-gray-100 font-sans">
 
-  <!-- Name Header (Centered) -->
-  <div class="flex items-center justify-center space-x-2 mb-8">
-    <i class="fas fa-shield-halved text-blue-400 text-3xl"></i>
-    <span class="text-3xl font-bold text-blue-300">Ken Brigham</span>
+<!-- Navigation -->
+<nav class="cyber-gradient py-4 px-6 sticky top-0 z-50 shadow-lg">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="flex items-center space-x-2">
+      <i class="fas fa-shield-halved text-blue-400 text-2xl"></i>
+      <span class="text-xl font-bold">Ken Brigham</span>
+    </div>
+    <div class="hidden md:flex space-x-8">
+      <a href="#projects" class="hover:text-blue-300 transition">Projects</a>
+      <a href="#contact" class="hover:text-blue-300 transition">Contact</a>
+    </div>
   </div>
+</nav>
 
-  <!-- Hero Section -->
-  <section class="cyber-gradient py-20 px-6 rounded-lg">
-      <div class="container mx-auto flex flex-col md:flex-row items-center">
-
-          <div class="md:w-1/2 mb-10 md:mb-0">
-              <h1 class="text-4xl md:text-5xl font-bold mb-4 neon-text">Building & Securing a Cloud-Enabled, AI-Powered Future</h1>
-              <p class="text-xl text-blue-200 mb-8">Cybersecurity | Cloud Operations & Security | Dev(Sec)Ops Engineer | AI/ML Ops </p>
-          </div>
-
-          <div class="md:w-1/2 flex justify-center">
-              <div class="terminal w-full max-w-md">
-                  <div class="terminal-header">
-                      <span class="terminal-dot bg-red-500"></span>
-                      <span class="terminal-dot bg-yellow-500"></span>
-                      <span class="terminal-dot bg-green-500"></span>
-                  </div>
-                  <div class="terminal-content">
-                      <p><span class="command">$ whoami</span></p>
-                      <p class="response mb-4">Ken Brigham - Security & Cloud Specialist</p>
-
-                      <p><span class="command">$ skills --cybersecurity --cloud --devsecops --ai</span></p>
-                      <p class="response mb-4">Cybersecurity | Cloud Operations & Security | Dev(Sec)Ops Engineer | AI/ML Ops</p>
-
-                      <p><span class="command">$ contact --method=email</span></p>
-                      <p class="response">kenbrigham777@gmail.com</p>
-
-                      <p><span class="command">$ _</span><span class="cursor"></span></p>
-                  </div>
-              </div>
-          </div>
+<!-- Hero Section -->
+<section class="cyber-gradient py-20 px-6">
+  <div class="container mx-auto flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2 mb-10 md:mb-0">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 neon-text">Building & Securing a Cloud-Enabled, AI-Powered Future</h1>
+      <p class="text-xl text-blue-200 mb-8">Cybersecurity | Cloud Operations & Security | Dev(Sec)Ops Engineer | AI/ML Ops</p>
+    </div>
+    <div class="md:w-1/2 flex justify-center">
+      <div class="terminal w-full max-w-md">
+        <div class="terminal-header">
+          <span class="terminal-dot bg-red-500"></span>
+          <span class="terminal-dot bg-yellow-500"></span>
+          <span class="terminal-dot bg-green-500"></span>
+        </div>
+        <div class="terminal-content">
+          <p><span class="command">$ whoami</span></p>
+          <p class="response mb-4">Ken Brigham - Security & Cloud Specialist</p>
+          <p><span class="command">$ skills --cybersecurity --cloud --devsecops --ai</span></p>
+          <p class="response mb-4">Threat Intelligence | Cloud Security | DevSecOps | ML Ops</p>
+          <p><span class="command">$ contact --method=email</span></p>
+          <p class="response">kenbrigham777@gmail.com</p>
+          <p><span class="command">$ _</span><span class="cursor"></span></p>
+        </div>
       </div>
-  </section>
-</div>
+    </div>
+  </div>
+</section>
 
-<p></p>
-<!-- Force Markdown render restart -->
-<div markdown="1">
+<!-- Projects Section -->
+<section id="projects" class="py-20 px-6 bg-gray-800">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold mb-12 text-center">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
+        <h3 class="text-xl font-bold mb-2">Quick Incident Triage Toolkit</h3>
+        <p class="mb-4">A sleek offline desktop app built with Rust, Tauri, and React for rapid system diagnostics with real-time monitoring and JSON export.</p>
+        <a href="https://github.com/KenB773/QuickIncidentTriageToolkit" class="text-blue-400 hover:underline">View Project</a>
+      </div>
+      <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
+        <h3 class="text-xl font-bold mb-2">AWS 3-Tier Web App</h3>
+        <p class="mb-4">A 3-tier Node.js app deployed to AWS Fargate, RDS, ALB, and provisioned by Terraform, with Docker containerization and SSL security.</p>
+        <a href="3TierWebAppProj.md" class="text-blue-400 hover:underline">View Details</a>
+      </div>
+      <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
+        <h3 class="text-xl font-bold mb-2">KubeCart Project</h3>
+        <p class="mb-4">A containerized Flask microservice deployed on EKS Kubernetes with a live Swagger UI for API interaction.</p>
+        <a href="KubeCartProj.md" class="text-blue-400 hover:underline">View Details</a>
+      </div>
+      <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
+        <h3 class="text-xl font-bold mb-2">Security Scan CI/CD Pipeline</h3>
+        <p class="mb-4">GitHub Actions pipeline integrating Trivy, Checkov, Bandit, and OWASP Dependency-Check with SARIF reporting for GitHub Security.</p>
+        <a href="https://github.com/KenB773/SecurityScanPipeline" class="text-blue-400 hover:underline">View Project</a>
+      </div>
+      <!-- Add more projects similarly -->
+    </div>
+  </div>
+</section>
 
----
+<!-- Contact Section -->
+<section id="contact" class="py-20 px-6 bg-gray-900">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-12">Contact</h2>
+    <p>Email me at <span class="text-blue-400">kenbrigham777@gmail.com</span> or connect on <a href="https://linkedin.com/in/ken-brigham" class="text-blue-400 hover:underline">LinkedIn</a>.</p>
+  </div>
+</section>
 
-## Projects
+<!-- Footer -->
+<footer class="cyber-gradient py-6 px-6">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="flex items-center space-x-2">
+      <i class="fas fa-shield-halved text-blue-400 text-xl"></i>
+      <span class="text-lg font-bold">Ken Brigham</span>
+    </div>
+    <p class="text-sm text-blue-200">&copy; 2025 Ken Brigham. All rights reserved.</p>
+  </div>
+</footer>
 
-### [Quick Incident Triage Toolkit](https://github.com/KenB773/QuickIncidentTriageToolkit) - A sleek, offline desktop app built with Rust, Tauri, and React for rapid system diagnostics. It visualizes real-time CPU, memory, disk, network, and process activity, and supports one-click data export to JSON.
-
-### [AWS 3-Tier Web App](3TierWebAppProj.md) - A full-stack, 3-tier Node.js web application on AWS using ECS Fargate, ALB, and RDS PostgreSQL, fully provisioned through Terraform and containerized with Docker. The project includes health checks, secure DB connectivity via SSL, and modular infrastructure-as-code for production-style scalability.
-
-### [AWS/GCP 'KubeCart' project](KubeCartProj.md) - KubeCart is a containerized Flask microservice simulating a basic shopping cart API, deployed to AWS using Kubernetes (EKS) and exposed via a public Load Balancer. It features a live Swagger UI for testing endpoints, built using Flask-RESTX and deployed with Docker, eksctl, and kubectl.
-
-### [Automated CI/CD Security Scan Pipeline](https://github.com/KenB773/SecurityScanPipeline) - A GitHub Actions pipeline that integrates Trivy, Checkov, Bandit, and OWASP Dependency-Check to automatically scan code, containers, and infrastructure for vulnerabilities — complete with SARIF reporting for GitHub Security.
-
-### [Azure Home SOC Setup](homesoc.md) - My Home SOC is a functional personal cloud security operations center built on Azure services, featuring log ingestion with Log Analytics, real-time alerting via Azure Monitor, and custom detection rules for tracking suspicious activity across a simulated home network.
-
-### [RogueSpeared tool](https://github.com/KenB773/RogueSpeared) - A red-team proof-of-concept tool that creates 'polyglot' files combining real WAV audio with XOR-encrypted Python payloads. The resulting file plays as normal audio but also executes embedded code when run as a script.
-
-### [AWS PartyRock - JargonBridge GenAI App](https://partyrock.aws/u/KenB7/1nIRFrtOV/JargonBridge) - A fun little Gen AI PartyRock tool I created for bidirectionally converting technical jargon and plain english. Includes a basic Claude-powered chatbot that can answer questions about terms used and its thought process behind the 'translations'.
--  [Example input/output snapshot](https://partyrock.aws/u/KenB7/1nIRFrtOV/JargonBridge/snapshot/jHsfSVHf4)
-
-### [AWS 'Silent Scalper' project](SilentScalperProj.md) - Serverless data pipeline. Using event-driven AWS architecture, my 'Silent Scalper' processes incoming files the moment they’re uploaded (without pre-provisioned infrastructure), scales automatically, and gracefully handles both success and failure paths. Aims to eliminate idle compute waste, as well as file loss resulting from crashes during unpredictable traffic spikes.
-
-### [AWS 'Smart Vault' project](SmartVaultProj.md) - Serverless AWS automation tool - my 'Smart Vault' is used to create, tag, and manage EBS snapshots for EC2 instances based on resource tags. It features scheduled backups, audit logging via DynamoDB, and automated cleanup to reduce storage costs.
-
-### [TryHackMe SOC Level 1](thmsoclevel1.md)
-
-## Resume + Credentials
-### [Resume](Resume New.pdf)
-### [Credly Profile](https://www.credly.com/users/mackenzie-brigham)
-
+</body>
+</html>
