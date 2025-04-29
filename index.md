@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     .cyber-gradient {
-      background: linear-gradient(135deg, #1c1c1c 0%, #1b1b1b 50%, #1a1a1a 100%);
+      background: linear-gradient(135deg, #1b1b1c 0%, #1b1b1b 50%, #1a1a1a 100%);
     }
     .neon-text {
       text-shadow: 0 0 5px #3b82f6, 0 0 10px #3b82f6;
@@ -23,6 +23,11 @@
     .response { color: #e2e8f0; }
     .cursor { display: inline-block; width: 10px; height: 18px; background-color: #e2e8f0; animation: blink 1s infinite; }
     @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+    .hexagon {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  .bg-custom-dark {
+    background-color: #1b1b1b;
   </style>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
@@ -70,7 +75,7 @@
 </section>
 
 <!-- Certifications Section -->
-<section id="certifications" class="py-20 px-6 bg-gray-900">
+<section id="certifications" class="py-20 px-6 bg-custom-dark">
   <div class="container mx-auto">
     <h2 class="text-3xl font-bold mb-12 text-center">Certifications</h2>
     <div class="grid md:grid-cols-3 gap-6">
@@ -204,7 +209,6 @@
   <div class="container mx-auto">
     <h2 class="text-3xl font-bold mb-12 text-center">Projects</h2>
     <div class="grid md:grid-cols-2 gap-8">
-      <!-- Existing projects -->
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
         <h3 class="text-xl font-bold mb-2">Quick Incident Triage Toolkit</h3>
         <p class="mb-4">A sleek offline desktop app built with Rust, Tauri, and React for rapid system diagnostics with real-time monitoring and JSON export.</p>
