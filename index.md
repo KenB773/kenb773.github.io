@@ -25,7 +25,6 @@
     @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
   </style>
 </head>
-
 <body class="bg-gray-900 text-gray-100 font-sans">
 
 <!-- Navigation -->
@@ -75,6 +74,7 @@
   <div class="container mx-auto">
     <h2 class="text-3xl font-bold mb-12 text-center">Projects</h2>
     <div class="grid md:grid-cols-2 gap-8">
+      <!-- Existing projects -->
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
         <h3 class="text-xl font-bold mb-2">Quick Incident Triage Toolkit</h3>
         <p class="mb-4">A sleek offline desktop app built with Rust, Tauri, and React for rapid system diagnostics with real-time monitoring and JSON export.</p>
@@ -95,7 +95,38 @@
         <p class="mb-4">GitHub Actions pipeline integrating Trivy, Checkov, Bandit, and OWASP Dependency-Check with SARIF reporting for GitHub Security.</p>
         <a href="https://github.com/KenB773/SecurityScanPipeline" class="text-blue-400 hover:underline">View Project</a>
       </div>
-      <!-- Add more projects similarly -->
+
+      <!-- Additional projects inserted here -->
+      <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
+        <h3 class="text-xl font-bold mb-2">Home SOC on Azure</h3>
+        <p class="mb-4">Functional personal SOC using Azure Monitor, Log Analytics, and Sentinel to track simulated home network threats in real time.</p>
+        <a href="homesoc.md" class="text-blue-400 hover:underline">View Details</a>
+      </div>
+      <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
+        <h3 class="text-xl font-bold mb-2">RogueSpeared</h3>
+        <p class="mb-4">Red-team PoC that creates polyglot WAV+Python files that play audio but execute encrypted payloads when run as scripts.</p>
+        <a href="https://github.com/KenB773/RogueSpeared" class="text-blue-400 hover:underline">View Project</a>
+      </div>
+      <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
+        <h3 class="text-xl font-bold mb-2">PartyRock: JargonBridge</h3>
+        <p class="mb-4">An LLM-powered app that explains technical jargon in plain English and vice versa using Amazon PartyRock.</p>
+        <a href="https://partyrock.aws/u/KenB7/1nIRFrtOV/JargonBridge" class="text-blue-400 hover:underline">View App</a>
+      </div>
+      <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
+        <h3 class="text-xl font-bold mb-2">Silent Scalper</h3>
+        <p class="mb-4">Serverless AWS pipeline that triggers processing on file upload and autoscaling, eliminating idle compute time.</p>
+        <a href="SilentScalperProj.md" class="text-blue-400 hover:underline">View Details</a>
+      </div>
+      <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
+        <h3 class="text-xl font-bold mb-2">Smart Vault</h3>
+        <p class="mb-4">Backup management tool for EBS snapshots using EventBridge and Lambda. Features audit logs and cleanup automation.</p>
+        <a href="SmartVaultProj.md" class="text-blue-400 hover:underline">View Details</a>
+      </div>
+      <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
+        <h3 class="text-xl font-bold mb-2">TryHackMe SOC Level 1</h3>
+        <p class="mb-4">Blue-team training and lab walkthroughs from the TryHackMe SOC Level 1 course.</p>
+        <a href="thmsoclevel1.md" class="text-blue-400 hover:underline">View Notes</a>
+      </div>
     </div>
   </div>
 </section>
