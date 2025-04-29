@@ -80,10 +80,6 @@
           <div class="md:w-1/2 mb-10 md:mb-0">
               <h1 class="text-4xl md:text-5xl font-bold mb-4 neon-text">Building & Securing a Cloud-Enabled, AI-Powered Future</h1>
               <p class="text-xl text-blue-200 mb-8">Cybersecurity | Cloud Operations & Security | Dev(Sec)Ops Engineer | AI/ML Ops </p>
-              <div class="flex space-x-4">
-                  <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg font-medium transition">Get In Touch</a>
-                  <a href="#projects" class="border border-blue-400 hover:bg-blue-900 text-blue-400 px-6 py-3 rounded-lg font-medium transition">View Projects</a>
-              </div>
           </div>
 
           <div class="md:w-1/2 flex justify-center">
