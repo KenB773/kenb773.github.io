@@ -59,7 +59,7 @@
           <p><span class="command">$ whoami</span></p>
           <p class="response mb-4">Ken Brigham - Security & Cloud Specialist</p>
           <p><span class="command">$ skills --cybersecurity --cloud --devsecops --ai</span></p>
-          <p class="response mb-4">Threat Intelligence | Cloud Security | DevSecOps | ML Ops</p>
+          <p class="response mb-4">Cybersecurity | Cloud Engineering & Security | Dev(Sec)Ops | AI/ML Ops</p>
           <p><span class="command">$ contact --method=email</span></p>
           <p class="response">kenbrigham777@gmail.com</p>
           <p><span class="command">$ _</span><span class="cursor"></span></p>
