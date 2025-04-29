@@ -108,6 +108,8 @@
 </div>
 
 <p></p>
+<!-- Force Markdown render restart -->
+<div markdown="1">
 
 ---
 
