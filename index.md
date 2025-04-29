@@ -69,6 +69,136 @@
   </div>
 </section>
 
+<!-- Certifications Section -->
+<section id="certifications" class="py-20 px-6 bg-gray-900">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold mb-12 text-center">Certifications</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://www.credly.com/badges/ba475443-2a41-4c31-8874-bc547b68f85b/public_url" target="_blank" class="font-bold text-blue-300 hover:underline">CompTIA Security+</a>
+          <p class="text-sm text-gray-400">CompTIA - Aug 2024</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://www.credly.com/badges/7b2dc361-956a-4b86-9183-c97e79ba86df/public_url" target="_blank" class="font-bold text-blue-300 hover:underline">CompTIA Network+</a>
+          <p class="text-sm text-gray-400">CompTIA - Feb 2025</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://learn.microsoft.com/api/credentials/share/en-us/Ken-8675/7004E3A174DCBC1D" target="_blank" class="font-bold text-blue-300 hover:underline">Microsoft Certified: Azure Fundamentals (AZ-900)</a>
+          <p class="text-sm text-gray-400">Microsoft - Mar 2025</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://www.credly.com/badges/4a875e12-e704-44f6-ada2-2d4da054940a/public_url" target="_blank" class="font-bold text-blue-300 hover:underline">AWS Certified Solutions Architect – Associate (SAA)</a>
+          <p class="text-sm text-gray-400">AWS - Mar 2025</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://www.credly.com/badges/7ff0fb85-8968-424d-8111-a864dbaeee4d" target="_blank" class="font-bold text-blue-300 hover:underline">AWS Certified Cloud Practitioner</a>
+          <p class="text-sm text-gray-400">AWS - Mar 2025</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://www.credly.com/badges/a6f69889-6761-4f9f-863e-5ece76672887/public_url" target="_blank" class="font-bold text-blue-300 hover:underline">Google Professional Cloud Security Engineer (PCSE)</a>
+          <p class="text-sm text-gray-400">Google - Apr 2025</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://www.credly.com/badges/8d1a93d5-9687-49e5-b696-75d48a3cf137/public_url" target="_blank" class="font-bold text-blue-300 hover:underline">Google IT Support Professional Certificate</a>
+          <p class="text-sm text-gray-400">Google - Nov 2023</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://www.scrumstudy.com/certification/verify?type=SFC&number=1077347" target="_blank" class="font-bold text-blue-300 hover:underline">Scrum Fundamentals Certified (SFC)</a>
+          <p class="text-sm text-gray-400">SCRUMstudy - Apr 2025</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://www.scrumstudy.com/certification/verify?type=SODFC&number=1014459" target="_blank" class="font-bold text-blue-300 hover:underline">Scrum for Ops and DevOps Fundamentals Certified (SODFC)</a>
+          <p class="text-sm text-gray-400">SCRUMstudy - Apr 2025</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://credentials.databricks.com/37b1543e-a0c1-4f32-b533-eb7d012ba0ec#acc.qgLw23W0" target="_blank" class="font-bold text-blue-300 hover:underline">Databricks Fundamentals Certified</a>
+          <p class="text-sm text-gray-400">Databricks - Apr 2025</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://credentials.databricks.com/48957d18-cf66-4caa-90ce-e000f44d0849#acc.axTm38cB" target="_blank" class="font-bold text-blue-300 hover:underline">Databricks Generative AI Fundamentals</a>
+          <p class="text-sm text-gray-400">Databricks - 2025</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://www.skillfront.com/Badges/48775715319912" target="_blank" class="font-bold text-blue-300 hover:underline">Certified Associate in Scrum Fundamentals (CASF)</a>
+          <p class="text-sm text-gray-400">SkillFront - Apr 2025</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- Projects Section -->
 <section id="projects" class="py-20 px-6 bg-gray-800">
   <div class="container mx-auto">
