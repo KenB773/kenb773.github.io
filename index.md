@@ -216,7 +216,7 @@
         <a href="3TierWebAppProj.md" class="text-blue-400 hover:underline">View Details</a>
       </div>
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
-        <h3 class="text-xl font-bold mb-2">KubeCart Project</h3>
+        <h3 class="text-xl font-bold mb-2">AWS/GCP KubeCart Project</h3>
         <p class="mb-4">A containerized Flask microservice deployed on EKS Kubernetes with a live Swagger UI for API interaction.</p>
         <a href="KubeCartProj.md" class="text-blue-400 hover:underline">View Details</a>
       </div>
@@ -225,30 +225,28 @@
         <p class="mb-4">GitHub Actions pipeline integrating Trivy, Checkov, Bandit, and OWASP Dependency-Check with SARIF reporting for GitHub Security.</p>
         <a href="https://github.com/KenB773/SecurityScanPipeline" class="text-blue-400 hover:underline">View Project</a>
       </div>
-
-      <!-- Additional projects inserted here -->
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
         <h3 class="text-xl font-bold mb-2">Home SOC on Azure</h3>
         <p class="mb-4">Functional personal SOC using Azure Monitor, Log Analytics, and Sentinel to track simulated home network threats in real time.</p>
         <a href="homesoc.md" class="text-blue-400 hover:underline">View Details</a>
       </div>
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
-        <h3 class="text-xl font-bold mb-2">RogueSpeared</h3>
+        <h3 class="text-xl font-bold mb-2">'RogueSpeared' Tool</h3>
         <p class="mb-4">Red-team PoC that creates polyglot WAV+Python files that play audio but execute encrypted payloads when run as scripts.</p>
         <a href="https://github.com/KenB773/RogueSpeared" class="text-blue-400 hover:underline">View Project</a>
       </div>
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
-        <h3 class="text-xl font-bold mb-2">PartyRock: JargonBridge</h3>
+        <h3 class="text-xl font-bold mb-2">AWS PartyRock: JargonBridge</h3>
         <p class="mb-4">An LLM-powered app that explains technical jargon in plain English and vice versa using Amazon PartyRock.</p>
         <a href="https://partyrock.aws/u/KenB7/1nIRFrtOV/JargonBridge" class="text-blue-400 hover:underline">View App</a>
       </div>
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
-        <h3 class="text-xl font-bold mb-2">Silent Scalper</h3>
+        <h3 class="text-xl font-bold mb-2">AWS Silent Scalper</h3>
         <p class="mb-4">Serverless AWS pipeline that triggers processing on file upload and autoscaling, eliminating idle compute time.</p>
         <a href="SilentScalperProj.md" class="text-blue-400 hover:underline">View Details</a>
       </div>
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
-        <h3 class="text-xl font-bold mb-2">Smart Vault</h3>
+        <h3 class="text-xl font-bold mb-2">AWS Smart Vault</h3>
         <p class="mb-4">Backup management tool for EBS snapshots using EventBridge and Lambda. Features audit logs and cleanup automation.</p>
         <a href="SmartVaultProj.md" class="text-blue-400 hover:underline">View Details</a>
       </div>
