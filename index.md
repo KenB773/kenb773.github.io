@@ -220,6 +220,11 @@
         <a href="3TierWebAppProj.md" class="text-blue-400 hover:underline">View Details</a>
       </div>
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
+        <h3 class="text-xl font-bold mb-2">AWS IaC Drift Detector</h3>
+        <p class="mb-4">A Go-based CLI tool that detects configuration drift between Terraform-managed infrastructure and the actual state of AWS resources.</p>
+        <a href="3TierWebAppProj.md" class="text-blue-400 hover:underline">View Details</a>
+      </div>
+      <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
         <h3 class="text-xl font-bold mb-2">AWS/GCP KubeCart Project</h3>
         <p class="mb-4">A containerized Flask microservice deployed on EKS Kubernetes with a live Swagger UI for API interaction.</p>
         <a href="KubeCartProj.md" class="text-blue-400 hover:underline">View Details</a>
