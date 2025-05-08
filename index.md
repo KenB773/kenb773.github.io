@@ -145,8 +145,38 @@
           <i class="fas fa-certificate text-blue-300 text-xl"></i>
         </div>
         <div>
+          <a href="https://coursera.org/share/0358918c5d756b35545f7b33d6cdee81" target="_blank" class="font-bold text-blue-300 hover:underline">IBM AI Engineering Professional</a>
+          <p class="text-sm text-gray-400">Google - Nov 2023</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
           <a href="https://www.credly.com/badges/8d1a93d5-9687-49e5-b696-75d48a3cf137/public_url" target="_blank" class="font-bold text-blue-300 hover:underline">Google IT Support Professional Certificate</a>
           <p class="text-sm text-gray-400">Google - Nov 2023</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://certificates.mooc.fi/validate/gnpnd8kzcpi" target="_blank" class="font-bold text-blue-300 hover:underline">University of Helsinki - Elements of AI</a>
+          <p class="text-sm text-gray-400">Google - Nov 2023</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://coursera.org/share/01b1ce0ead8d747e881a45fcfef14e01" target="_blank" class="font-bold text-blue-300 hover:underline">IBM Generative AI for Cybersecurity Professionals</a>
+          <p class="text-sm text-gray-400">Google - Apr 2025</p>
         </div>
       </div>
 
