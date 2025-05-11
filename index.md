@@ -238,7 +238,6 @@
   <div class="container mx-auto">
     <h2 class="text-3xl font-bold mb-12 text-center">Education</h2>
     <div class="grid md:grid-cols-3 gap-6">
-    <div class="space-y-4">
 
       <div class="bg-gray-800 p-6 rounded-lg flex items-start">
         <div class="bg-blue-900 p-3 rounded-full mr-4">
