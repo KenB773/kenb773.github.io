@@ -234,73 +234,76 @@
   </div>
 </section>
 
-<section id="education" class="section">
-  <div class="container">
-    <h2 class="section-title">Education</h2>
-    <div class="grid">
-      <div class="card">
-        <h3 class="card-title">
-          <a href="https://coursera.org/share/5bac352fbd57a3858721b658b0888097" target="_blank" rel="noopener noreferrer">
+<section id="education" class="section mt-10">
+  <div class="container mx-auto px-4">
+    <h2 class="text-2xl font-bold text-white mb-6">Education</h2>
+
+    <div class="space-y-4">
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-university text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://coursera.org/share/5bac352fbd57a3858721b658b0888097" target="_blank" class="font-bold text-blue-300 hover:underline">
             DevOps, DataOps, MLOps
           </a>
-        </h3>
-        <p class="card-subtitle">Duke University • May 2025</p>
-        <p class="card-description">
-          Learned how to build and deploy ML/AI solutions using pair programming with GitHub Copilot, focusing on DevOps, MLOps, and AI-powered workflows.
-        </p>
+          <p class="text-sm text-gray-400">Duke University – May 2025</p>
+        </div>
       </div>
 
-      <div class="card">
-        <h3 class="card-title">
-          <a href="#" target="_blank" rel="noopener noreferrer">
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-university text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="#" target="_blank" class="font-bold text-blue-300 hover:underline">
             Introduction to DevSecOps
           </a>
-        </h3>
-        <p class="card-subtitle">Johns Hopkins Whiting School of Engineering • May 2025</p>
-        <p class="card-description">
-          Explored the integration of development, security, and operations through practices like CI/CD, version control, and agile delivery methods.
-        </p>
+          <p class="text-sm text-gray-400">Johns Hopkins Whiting School of Engineering – May 2025</p>
+        </div>
       </div>
 
-      <div class="card">
-        <h3 class="card-title">
-          <a href="#" target="_blank" rel="noopener noreferrer">
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-university text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="#" target="_blank" class="font-bold text-blue-300 hover:underline">
             DevOps Culture and Mindset
           </a>
-        </h3>
-        <p class="card-subtitle">University of California, Davis • May 2025</p>
-        <p class="card-description">
-          Studied DevOps foundations including systems thinking, feedback loops and value stream mapping, with emphasis on culture and team collaboration.
-        </p>
+          <p class="text-sm text-gray-400">University of California, Davis – May 2025</p>
+        </div>
       </div>
 
-      <div class="card">
-        <h3 class="card-title">
-          <a href="https://certificates.mooc.fi/validate/gnpnd8kzcpi" target="_blank" rel="noopener noreferrer">
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-university text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://certificates.mooc.fi/validate/gnpnd8kzcpi" target="_blank" class="font-bold text-blue-300 hover:underline">
             Elements of AI
           </a>
-        </h3>
-        <p class="card-subtitle">University of Helsinki • May 2025</p>
-        <p class="card-description">
-          Covered AI fundamentals such as machine learning, neural networks and ethical considerations, with a focus on conceptual understanding over coding.
-        </p>
+          <p class="text-sm text-gray-400">University of Helsinki – May 2025</p>
+        </div>
       </div>
 
-      <div class="card">
-        <h3 class="card-title">
-          <a href="#" target="_blank" rel="noopener noreferrer">
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-university text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="#" target="_blank" class="font-bold text-blue-300 hover:underline">
             DevOps with Kubernetes
           </a>
-        </h3>
-        <p class="card-subtitle">University of Helsinki • Apr 2025</p>
-        <p class="card-description">
-          Built and deployed microservices using Kubernetes (K3s and GKE), learning how to manage scalable, production-ready systems with automation.
-        </p>
+          <p class="text-sm text-gray-400">University of Helsinki – Apr 2025</p>
+        </div>
       </div>
 
     </div>
   </div>
 </section>
+
 
 
 <!-- Projects Section -->
