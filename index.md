@@ -234,10 +234,10 @@
   </div>
 </section>
 
-<section id="education" class="section mt-10">
-  <div class="container mx-auto px-4">
-    <h2 class="text-2xl font-bold text-white mb-6">Education</h2>
-
+<section id="education" class="py-20 px-6 bg-custom-dark">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold mb-12 text-center">Education</h2>
+    <div class="grid md:grid-cols-3 gap-6">
     <div class="space-y-4">
 
       <div class="bg-gray-800 p-6 rounded-lg flex items-start">
