@@ -234,6 +234,75 @@
   </div>
 </section>
 
+<section id="education" class="section">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <div class="grid">
+      <div class="card">
+        <h3 class="card-title">
+          <a href="https://coursera.org/share/5bac352fbd57a3858721b658b0888097" target="_blank" rel="noopener noreferrer">
+            DevOps, DataOps, MLOps
+          </a>
+        </h3>
+        <p class="card-subtitle">Duke University • May 2025</p>
+        <p class="card-description">
+          Learned how to build and deploy ML/AI solutions using pair programming with GitHub Copilot, focusing on DevOps, MLOps, and AI-powered workflows.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            Introduction to DevSecOps
+          </a>
+        </h3>
+        <p class="card-subtitle">Johns Hopkins Whiting School of Engineering • May 2025</p>
+        <p class="card-description">
+          Explored the integration of development, security, and operations through practices like CI/CD, version control, and agile delivery methods.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            DevOps Culture and Mindset
+          </a>
+        </h3>
+        <p class="card-subtitle">University of California, Davis • May 2025</p>
+        <p class="card-description">
+          Studied DevOps foundations including systems thinking, feedback loops and value stream mapping, with emphasis on culture and team collaboration.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">
+          <a href="https://certificates.mooc.fi/validate/gnpnd8kzcpi" target="_blank" rel="noopener noreferrer">
+            Elements of AI
+          </a>
+        </h3>
+        <p class="card-subtitle">University of Helsinki • May 2025</p>
+        <p class="card-description">
+          Covered AI fundamentals such as machine learning, neural networks and ethical considerations, with a focus on conceptual understanding over coding.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            DevOps with Kubernetes
+          </a>
+        </h3>
+        <p class="card-subtitle">University of Helsinki • Apr 2025</p>
+        <p class="card-description">
+          Built and deployed microservices using Kubernetes (K3s and GKE), learning how to manage scalable, production-ready systems with automation.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <!-- Projects Section -->
 <section id="projects" class="py-20 px-6 bg-custom-dark">
   <div class="container mx-auto">
