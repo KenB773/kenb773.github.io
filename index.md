@@ -373,7 +373,7 @@
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
         <h3 class="text-xl font-bold mb-2">TryHackMe SOC Level 1</h3>
         <p class="mb-4">Blue-team training and lab walkthroughs from the TryHackMe SOC Level 1 course.</p>
-        <a href="thmsoclevel1.md" class="text-blue-400 hover:underline">View Notes</a>
+        <a href="thmsoclevel1.html" class="text-blue-400 hover:underline">View Notes</a>
       </div>
     </div>
   </div>
