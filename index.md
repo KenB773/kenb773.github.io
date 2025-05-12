@@ -363,12 +363,12 @@
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
         <h3 class="text-xl font-bold mb-2">AWS Silent Scalper</h3>
         <p class="mb-4">Serverless AWS pipeline that triggers processing on file upload and autoscaling, eliminating idle compute time.</p>
-        <a href="SilentScalperProj.md" class="text-blue-400 hover:underline">View Details</a>
+        <a href="smart-vault.html" class="text-blue-400 hover:underline">View Details</a>
       </div>
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
         <h3 class="text-xl font-bold mb-2">AWS Smart Vault</h3>
         <p class="mb-4">Backup management tool for EBS snapshots using EventBridge and Lambda. Features audit logs and cleanup automation.</p>
-        <a href="SmartVaultProj.md" class="text-blue-400 hover:underline">View Details</a>
+        <a href="smart-vault.html" class="text-blue-400 hover:underline">View Details</a>
       </div>
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
         <h3 class="text-xl font-bold mb-2">TryHackMe SOC Level 1</h3>
