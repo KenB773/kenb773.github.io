@@ -1,45 +1,42 @@
-<h1>Azure VM with Sentinel - Personal SIEM/Home SOC</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Azure Sentinel - Home SOC</title>
+  <link rel="stylesheet" href="style.css" /> <!-- adjust if your CSS is in another path -->
+</head>
+<body>
+  <main class="container">
+    <h1>Azure VM with Sentinel – Personal SIEM / Home SOC</h1>
 
-<p>After some hands-on work through various learning paths, virtual internships and to satisfy my own insatiable curiosity, I built out my own test SIEM with a custom rule, set to detect succesful logins via RDP (which was intentionally left open for testing purposes). Thanks to the free $200 credit for new Azure accounts, this project even worked out to be the best kind of cheap... Free! </p>
+    <p>After some hands-on work through various learning paths, virtual internships and to satisfy my own insatiable curiosity, I built out my own test SIEM with a custom rule, set to detect successful logins via RDP (which was intentionally left open for testing purposes). Thanks to the free $200 credit for new Azure accounts, this project even worked out to be the best kind of cheap... Free!</p>
 
-<h2>Creating the VM</h2>
+    <h2>Creating the VM</h2>
+    <p>The first step after getting started on Azure was, of course, to create a relatively simple Windows 10 Pro VM... </p>
+    <img src="Azure VM Creation.png" alt="Azure VM Creation" />
 
-<p>The first step after getting started on Azure was, of course, to create a relatively simple Windows 10 Pro VM. I created an aptly named resource group and proceeded to aptly name the VM itself, then changed the default region (which was inexplicably set to South Africa) to the much more geographically convenient East US. Not pictured, but in the Networking tab I ensured we had open access to RDP via port 3389 - incredibly irresponsible under most circumstances, but perfect for our current purpose.</p>
+    <h2>Sentinel / Log Analytics Workspace Setup</h2>
+    <p>Next up was setting up Sentinel itself. I continued with my apt naming trend.</p>
+    <img src="Azure Sentinel Creation.png" alt="Sentinel Creation" />
 
-<p><img src="Azure VM Creation.png" alt="Azure VM Creation" /></p>
+    <p>After this, I installed the Windows Security Events Data Connector via the Content Hub...</p>
+    <img src="Azure WinSecEvents AMA.png" alt="Sentinel WinAMA" />
+    <img src="Azure Data Collection Rule AMA.png" alt="Sentinel DCR" />
+    <img src="Azure Log Received DCR.png" alt="Logs Collected" />
 
-<h2>Sentinel/Log Analytics Workspace &amp; Set Up</h2>
+    <p>Now that we’re receiving logs from our VM, we want to create a useful detection rule...</p>
+    <img src="Rule Logic Full 2.png" alt="Rule Logic" />
+    <p>We categorize it under <a href="https://attack.mitre.org/tactics/TA0001/" target="_blank">TA0001 - Initial Access</a>.</p>
 
-<p>Next up was setting up Sentinel itself. I continued with my apt naming trend.</p>
+    <h2>Testing it Out</h2>
+    <p>I RDP into the VM and sign in with the previously created administrator credentials...</p>
+    <img src="Azure Incident Logged.png" alt="Incident Logged" />
 
-<p><img src="Azure Sentinel Creation.png" alt="Sentinel Creation" /></p>
+    <p>A quick switch from 'Allow' to 'Deny' in the port rules should do the trick.</p>
+    <img src="Azure RDP 3389 Deny.png" alt="RDP Deny" />
 
-<p>After this, I installed the Windows Security Events Data Connector via the Content Hub. We need this Data Connector because although our VM is likely logging events as it should, we want to be able to pull them from the endpoint and view them in our new Sentinel SIEM.</p>
-
-<p><img src="Azure WinSecEvents AMA.png" alt="Sentinel WinAMA" /></p>
-
-<p>Once that's installed, we want to set up the Data Collection Rule. (Azure really loves some Personal Pronouns!) That ended up looking something like this, with me selecting the only available VM on the Resources tab.</p>
-
-<p><img src="Azure Data Collection Rule AMA.png" alt="Sentinel DCR" /></p>
-
-<p>We wait a few minutes (and grab the Uber Eats order, inhale some slices of pizza, crack open an energy drink...) at this point, and then verify that logs are being collected upon our return - success!</p>
-
-<p><img src="Azure Log Received DCR.png" alt="Logs Collected" /></p>
-
-<p>Now that we're receiving logs from our VM, we want to create a useful detection rule. Since an RDP access alert is probably the single most ubiquitous, obvious and important rule imaginable and we've configured a vulnerability to it, we set up the following - keeping in mind that we don't want to see system accounts and only want to see successful sign-ins.</p>
-
-<p><img src="Rule Logic Full 2.png" alt="Rule Logic" /></p>
-
-<p>We create a new, high severity scheduled rule with that logic, setting it to alert us if incidents are greater than 0 (meaning any and all), and to run it every 5 minutes with that same 5 minutes of data. Sentinel also has beta ATT&amp;CK integration, so we categorize it as <a href="https://attack.mitre.org/tactics/TA0001/">TA0001 - Initial Access</a>.</p>
-
-<h2>Testing it out!</h2>
-
-<p>Now we get to check our work! I RDP into the VM and sign-in with the previously created administrator credentials. I hang around for a bit, then turn the VM off and wait 5 minutes before checking our SIEM Incidents...</p>
-
-<p><img src="Azure Incident Logged.png" alt="Incident Logged" /></p>
-
-<p>Aha! I caught myself red-handed! So it looks like everything worked out, and the test run was successful - I'll now return to the real world, and immediately cut off RDP exposure for my VM.</p>
-
-<p><img src="Azure RDP 3389 Deny.png" alt="RDP DENY" /></p>
-
-<p>A quick switch from 'Allow' to 'Deny' in the port rules should do the trick. With that, we wrap up this very basic but very useful experiment! This is just the tip of the iceberg, and I'll definitely be back to do more with this setup in the near future - I'll probably have it on a separate page linked from the index. Thanks for reading!</p>
+    <p>With that, we wrap up this basic but very useful experiment! This is just the tip of the iceberg, and I'll definitely be back to do more with this setup in the future. Thanks for reading!</p>
+  </main>
+</body>
+</html>
