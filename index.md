@@ -318,7 +318,7 @@
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
         <h3 class="text-xl font-bold mb-2">AWS 3-Tier Web App</h3>
         <p class="mb-4">A 3-tier Node.js app deployed to AWS Fargate, RDS, ALB, and provisioned by Terraform, with Docker containerization and SSL security.</p>
-        <a href="3TierWebAppProj.md" class="text-blue-400 hover:underline">View Details</a>
+        <a href="https://github.com/KenB773/3TierWebAppTerraform" class="text-blue-400 hover:underline">View Details</a>
       </div>
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
         <h3 class="text-xl font-bold mb-2">AWS IaC Drift Detector</h3>
@@ -338,7 +338,7 @@
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
         <h3 class="text-xl font-bold mb-2">AWS/GCP KubeCart Project</h3>
         <p class="mb-4">A containerized Flask microservice deployed on EKS Kubernetes with a live Swagger UI for API interaction.</p>
-        <a href="KubeCartProj.md" class="text-blue-400 hover:underline">View Details</a>
+        <a href="https://github.com/KenB773/KubeCart" class="text-blue-400 hover:underline">View Details</a>
       </div>
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
         <h3 class="text-xl font-bold mb-2">Security Scan CI/CD Pipeline</h3>
