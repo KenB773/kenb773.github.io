@@ -165,8 +165,18 @@
           <i class="fas fa-certificate text-blue-300 text-xl"></i>
         </div>
         <div>
-          <a href="https://coursera.org/share/01b1ce0ead8d747e881a45fcfef14e01" target="_blank" class="font-bold text-blue-300 hover:underline">IBM Generative AI for Cybersecurity Professionals</a>
+          <a href="https://www.credly.com/badges/3079f837-cb68-4e9f-bb6f-c26f72dc0361/public_url" target="_blank" class="font-bold text-blue-300 hover:underline">Google Cloud Digital Leader</a>
           <p class="text-sm text-gray-400">Google - Apr 2025</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://coursera.org/share/01b1ce0ead8d747e881a45fcfef14e01" target="_blank" class="font-bold text-blue-300 hover:underline">IBM Generative AI for Cybersecurity Professionals</a>
+          <p class="text-sm text-gray-400">IBM - Apr 2025</p>
         </div>
       </div>
 
