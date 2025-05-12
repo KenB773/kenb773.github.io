@@ -216,7 +216,7 @@
         </div>
         <div>
           <a href="https://credentials.databricks.com/48957d18-cf66-4caa-90ce-e000f44d0849#acc.axTm38cB" target="_blank" class="font-bold text-blue-300 hover:underline">Databricks Generative AI Fundamentals</a>
-          <p class="text-sm text-gray-400">Databricks - 2025</p>
+          <p class="text-sm text-gray-400">Databricks - Apr 2025</p>
         </div>
       </div>
 
