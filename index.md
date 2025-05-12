@@ -317,7 +317,7 @@
       </div>
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
         <h3 class="text-xl font-bold mb-2">AWS 3-Tier Web App</h3>
-        <p class="mb-4">A 3-tier Node.js app deployed to AWS Fargate, RDS, ALB, and provisioned by Terraform, with Docker containerization and SSL security.</p>
+        <p class="mb-4">A 3-tier Node.js app deployed to AWS Fargate incorporating PostgreSQL and ALB, provisioned by Terraform with Docker containerization.</p>
         <a href="https://github.com/KenB773/3TierWebAppTerraform" class="text-blue-400 hover:underline">View Details</a>
       </div>
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
