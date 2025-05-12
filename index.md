@@ -326,6 +326,16 @@
         <a href="3TierWebAppProj.md" class="text-blue-400 hover:underline">View Details</a>
       </div>
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
+        <h3 class="text-xl font-bold mb-2">OpenAI Chatbot UI with Jenkins/AWS EKS</h3>
+        <p class="mb-4"> OpenAI Chatbot UI deployed with Jenkins, EKS and Terraform - built with DevSecOps in mind.</p>
+        <a href="https://github.com/KenB773/ChatbotUIJenkins" class="text-blue-400 hover:underline">View Details</a>
+      </div>
+      <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
+        <h3 class="text-xl font-bold mb-2">Azure DevOps Pipeline</h3>
+        <p class="mb-4">Terraform deployments at scale using Azure DevOps, Service Principals, and secure CI/CD pipelines.</p>
+        <a href="https://github.com/KenB773/AzureDevOpsPipeline" class="text-blue-400 hover:underline">View Details</a>
+      </div>
+      <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
         <h3 class="text-xl font-bold mb-2">AWS/GCP KubeCart Project</h3>
         <p class="mb-4">A containerized Flask microservice deployed on EKS Kubernetes with a live Swagger UI for API interaction.</p>
         <a href="KubeCartProj.md" class="text-blue-400 hover:underline">View Details</a>
