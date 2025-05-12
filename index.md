@@ -63,8 +63,8 @@
         <div class="terminal-content">
           <p><span class="command">$ whoami</span></p>
           <p class="response mb-4">Ken Brigham - Security & Cloud Specialist</p>
-          <p><span class="command">$ skills --cybersecurity --cloud --devsecops --ai</span></p>
-          <p class="response mb-4">Cybersecurity | Cloud Engineering & Security | Dev(Sec)Ops | AI/ML Ops</p>
+          <p><span class="command">$ skills --cybersec --cloudsec --devops --aiops</span></p>
+          <p class="response mb-4">Cybersecurity | Cloud Security | Dev(Sec)Ops | AI/MLOps</p>
           <p><span class="command">$ contact --method=email</span></p>
           <p class="response">kenbrigham777@gmail.com</p>
           <p><span class="command">$ _</span><span class="cursor"></span></p>
@@ -247,7 +247,7 @@
           <a href="https://coursera.org/share/5bac352fbd57a3858721b658b0888097" target="_blank" class="font-bold text-blue-300 hover:underline">
             DevOps, DataOps, MLOps
           </a>
-          <p class="text-sm text-gray-400">Duke University – May 2025</p>
+          <p class="text-sm text-gray-400">Duke University - May 2025</p>
         </div>
       </div>
 
@@ -259,7 +259,7 @@
           <a href="#" target="_blank" class="font-bold text-blue-300 hover:underline">
             Introduction to DevSecOps
           </a>
-          <p class="text-sm text-gray-400">Johns Hopkins Whiting School of Engineering – May 2025</p>
+          <p class="text-sm text-gray-400">Johns Hopkins Whiting School of Engineering - May 2025</p>
         </div>
       </div>
 
@@ -271,7 +271,7 @@
           <a href="#" target="_blank" class="font-bold text-blue-300 hover:underline">
             DevOps Culture and Mindset
           </a>
-          <p class="text-sm text-gray-400">University of California, Davis – May 2025</p>
+          <p class="text-sm text-gray-400">University of California, Davis - May 2025</p>
         </div>
       </div>
 
@@ -283,7 +283,7 @@
           <a href="https://certificates.mooc.fi/validate/gnpnd8kzcpi" target="_blank" class="font-bold text-blue-300 hover:underline">
             Elements of AI
           </a>
-          <p class="text-sm text-gray-400">University of Helsinki – May 2025</p>
+          <p class="text-sm text-gray-400">University of Helsinki - May 2025</p>
         </div>
       </div>
 
@@ -295,7 +295,7 @@
           <a href="#" target="_blank" class="font-bold text-blue-300 hover:underline">
             DevOps with Kubernetes
           </a>
-          <p class="text-sm text-gray-400">University of Helsinki – Apr 2025</p>
+          <p class="text-sm text-gray-400">University of Helsinki - Apr 2025</p>
         </div>
       </div>
 
