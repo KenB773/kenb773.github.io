@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TryHackMe - SOC Level 1</title>
+  <link rel="stylesheet" href="/assets/css/style.css?v=64449ae24f2bcfd363b0ed346a21f75421f936cb">
+</head>
+<body>
+
+<h1>TryHackMe - SOC Level 1</h1>
+<p><img src="TryHackMe SOC L1 Icon.png" alt="THM SOCL1 Icon"></p>
+<p>The first role-specific labs I'll be documenting will come from TryHackMe's SOC Level 1 learning path & certificate!</p>
+
+<h2>Module 1. Intro</h2>
+<p>Right off the bat and from the very first module, they have us using a simplified, mock SIEM to identify a malicious connection attempt, use a mock open-source IP address database to determine if the IP is known to be malicious, escalate the alert to the correct team member (in this case, the SOC Team Lead) and then block the IP address in the firewall once given permission to do so.</p>
+<p>See photos below:</p>
+<p><img src="TryHackMe SIEM 1.png" alt="SIEM"></p>
+<p><img src="TryHackMe OS Database IP Checking 1.png" alt="IP Check"></p>
+<p>And the questions + answers:</p>
+<p><img src="THM Module 1 Q+A.png" alt="Q+A"></p>
+
+<h2>Module 2. Pyramid of Pain</h2>
+<p>Next up is the Pyramid of Pain - this is essentially a framework that demonstrates how certain IoCs are more troubling to a threat actor than another, and is used to enhance Cyber Threat Intelligence (CTI) in many cybersecurity solutions. From AttackIQ: "The Pyramid of Pain ... provides an ascending priority list of indicators against which security controls should be applied." So, starting from the bottom and working up:</p>
+
+<h3>Trivial - Hash Values</h3>
+<p>Hash values are exceptionally easy for a threat actor to circumvent, as modifying a file by even a single bit and then recompiling will produce a different hash and therefore entirely sidestep an attempted control at this level. See below for given example:</p>
+<p><img src="THM Mod 2 - Hash.png" alt="Hash Example"></p>
+
+<h3>Easy - IP Address</h3>
+<p>IP addresses are also quite easy for even less experienced adversaries to work around. Blocking or denying inbound traffic/requests from a given IP is not a bulletproof defense, despite being a common (and still useful) defense tactic. We are then given an example of how threat actors can work around a control at this level, and provided static reports from <a href="https://any.run/">any.run</a> to analyze and then answer the following:</p>
+<p><img src="THM Mod 2 - IP + FastFlux.png" alt="IP Example"></p>
+
+<h3>Simple - Domain Names</h3>
+<p>Moving up the Pyramid once again, we have domain names. Direct from THM: "Domain Names can be a little more of a pain for the attacker to change as they would most likely need to purchase the domain, register it and modify DNS records. Unfortunately for defenders, many DNS providers have loose standards and provide APIs to make it even easier for the attacker to change the domain."</p>
+<p><img src="THM Sodinokibi C2 domains.png" alt="Domain Sodinokibi C2s"></p>
+<p><img src="THM Mod 2 - Domain Punycode.png" alt="Domain Punycode Example"></p>
+<p>The module goes on to explain the use of URL shorteners, and how they are commonly used to hide malicious domain names, and provides a potential negation tactic in appending a '+' to the shortened URL to see the full domain you are being directed to. For example, "http://bit.ly/275hf9+” would show the actual destination of that link. Next, we circle back to the ever-so-useful any.run. Being a sandboxing service that executes a sample, it allows us to review connections such as HTTP or DNS requests, or see any processes attempting to communicate with an external IP.</p>
+<p>Finally, we're given an actual sandboxed file on AnyRun, and asked to answer the following questions by analyzing the information in the pictured report:</p>
+<p><img src="THM Mod 2 AnyRun Sandbox.png" alt="Sandbox AnyRun"></p>
+<p><img src="THM Mod 2 - Q + A.png" alt="THM Mod 2 Q+A"></p>
+
+<h3>Annoying - Host Artifacts</h3>
+<p>Moving up another step into the 'yellow zone', we have host artifacts. This is where the attacker will begin to feel much more frustrated if the attack is detected as it would likely require them to change their tools and methodologies, which can be very time consuming.</p>
+<p>From THM: "Host artifacts are the traces or observables that attackers leave on the system, such as registry values, suspicious process execution[s], attack patterns or IOCs (Indicators of Compromise), files dropped by malicious applications, or anything exclusive to the current threat."</p>
+<p><img src="THM Mod 2 - Host Artifiacts Sus Events.png" alt="Host Artifact Sus Proc Execution"></p>
+<p><img src="THM Mod 2 - HA Dropped Files.png" alt="Host Artifacts Dropped Files"></p>
+<p>We are then given an <a href="https://assets.tryhackme.com/additional/pyramidofpain/task5-report.pdf">example malware analysis report</a>, and asked to answer several questions based on the information within it:</p>
+<p><img src="THM Mod 2 - HA Q+A.png" alt="HA Q+A"></p>
+
+<h3>Annoying - Network Artifacts</h3>
+<p>In the same 'yellow zone' as Host Artifacts are Network Artifacts. Again from THM: "A network artifact can be a user-agent string, C2 information, or URI patterns followed by the HTTP POST requests. An attacker might use a User-Agent string that hasn’t been observed in your environment before or seems out of the ordinary. The User-Agent is defined by RFC2616 as the request-header field that contains the information about the user agent originating the request."</p>
+<p><img src="THM Mod 2 - Network Artifacts.png" alt="NA Def"></p>
+<p>Then some questions regarding the above screenshots:</p>
+<p><img src="THM Mod 2 - NA Q+A.png" alt="NA Q+A"></p>
+
+<h3>Challenging - Tools</h3>
+<p>At this point in the Pyramid, an attacker will likely give up, or if they're sufficiently advanced and/or committed, will at least have to go back to the drawing board and create a new tool that serves the same purpose. Threat actors without sufficient resources to continue will often be deflected at this point.</p>
+<p><img src="THM Mod 2 - Tools.png" alt="TMH Tools"></p>
+
+<h3>Tough - TTPs</h3>
+<p>We finally reach the apex of the Pyramid of Pain, where we have Tactics, Techniques & Procedures. We get our first mention of the omnipresent MITRE ATT&CK Matrix, which is a framework that lists, essentially, all the steps taken by a cyber adversary to achieve their goal in almost any possible circumstance. By detecting and responding to TTPs quickly, we leave the threat actor almost no chance to fight back.</p>
+
+<h3>Pyramid of Pain - Practical</h3>
+<p>The practical involves matching descriptions to each 'block' of the Pyramid, then entering the flag awarded for doing so.</p>
+
+<h3>Pyramid of Pain - Conclusion</h3>
+<p>We finished the module!</p>
+<p><img src="THM Mod 2 - Conclusion.png" alt="Module 2 Conclusion"></p>
+
+<h2>Module 3 - Cyber Kill Chain</h2>
+<p><img src="THM Cyber Kill Chain.png" alt="CyberKillChain"></p>
+<p>Moving on to the next module - Cyber Kill Chain! In the words of THM:</p>
+
+<blockquote>
+  The term kill chain is a military concept related to the structure of an attack. It consists of target identification, decision and order to attack the target, and finally the target destruction.<br><br>
+  Thanks to Lockheed Martin, a global security and aerospace company, that established the Cyber Kill Chain® framework for the cybersecurity industry in 2011 based on the military concept. The framework defines the steps used by adversaries or malicious actors in cyberspace. To succeed, an adversary needs to go through all phases of the Kill Chain. We will go through the attack phases and help you better understand adversaries and their techniques used in the attack to defend yourself.
+</blockquote>
+
+<p><strong>Attack Phases:</strong></p>
+<ol>
+  <li>Reconnaissance</li>
+  <li>Weaponization</li>
+  <li>Delivery</li>
+  <li>Exploitation</li>
+  <li>Installation</li>
+  <li>Command & Control</li>
+  <li>Actions on Objectives</li>
+</ol>
+
+<h3>Reconnaissance</h3>
+<p>The topic of OSINT is introduced, and specifically email harvesting is focused on with tools like <a href="https://github.com/laramies/theHarvester">theHarvester</a>.</p>
+
+<h3>Weaponization</h3>
+<p>After successful recon, the threat actor combines <strong>malware</strong> and <strong>exploit(s)</strong> into a deliverable <strong>payload</strong>.</p>
+
+<h3>Delivery</h3>
+<p>Delivery is the method of distributing the payload: phishing emails, USB drops, watering hole attacks, etc.</p>
+
+<h3>Exploitation</h3>
+<p>The attacker exploits the vulnerability. OWASP Top 10 is introduced. Zero-days are also mentioned.</p>
+
+<h3>Installation</h3>
+<p>Persistence via web shells, backdoors, modified services, registry keys, or [<a href="https://attack.mitre.org/techniques/T1070/006/">Timestomping</a>].</p>
+
+<h3>Command & Control (C2)</h3>
+<p>Beaconing using HTTP/HTTPS, DNS tunneling, or other channels.</p>
+
+<h3>Actions on Objectives</h3>
+<p>Once inside, the attacker might:</p>
+<ul>
+  <li>Collect credentials</li>
+  <li>Escalate privileges</li>
+  <li>Move laterally</li>
+  <li>Exfiltrate data</li>
+  <li>Delete backups or shadow copies</li>
+  <li>Corrupt or overwrite data</li>
+</ul>
+
+<h3>Cyber Kill Chain - Practical</h3>
+<p>Match general concepts to the stages of the CKC.</p>
+
+<h3>Cyber Kill Chain - Conclusion</h3>
+<p><img src="THM Mod 3 - CKC Conclusion.png" alt="CKC Conclusion"></p>
+
+<h2>Module 4 - Unified Kill Chain</h2>
+<p>THM introduces a more modern and detailed model, used in <em>complement</em> to others.</p>
+
+<h3>Threat Modelling</h3>
+<p>STRIDE, DREAD, CVSS frameworks and concepts of identifying risk are discussed.</p>
+
+<h3>Introducing the UKC</h3>
+<p><img src="THM Unified Kill Chain.png" alt="UKC Visual"></p>
+
+<h3>UKC Phases - In, Through, Out</h3>
+<ul>
+  <li><strong>In</strong>: Recon, Weaponization, Social Engineering, Exploitation, Persistence, Evasion, C2, Pivoting</li>
+  <li><strong>Through</strong>: Discovery, Privilege Escalation, Lateral Movement</li>
+  <li><strong>Out</strong>: Collection, Exfiltration, Impact</li>
+</ul>
+
+<h3>UKC - Practical</h3>
+<p>Another round of matching TTPs to their respective phase.</p>
+
+<h3>UKC - Conclusion</h3>
+<p><img src="THM Mod 4 - Conclusion.png" alt="UKC Conclusion"></p>
+
+<h2>Module 5 - Diamond Model</h2>
+<p><img src="THM Mod 5 - Diamond Model Intro.png" alt="Diamond Model"></p>
+<p>After several short review sections and questions, we create our own Diamond Model based on the <a href="https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2016/05/20081514/E-ISAC_SANS_Ukraine_DUC_5.pdf">2016 Ukrainian Power Grid Attack</a>.</p>
+
+<h2>Module 6 - MITRE</h2>
+<p>Intro to ATT&CK, CAR, Engage, D3FEND, CVEs, and more.</p>
+
+<h3>MITRE - ATT&CK</h3>
+<blockquote>
+  "MITRE ATT&CK® is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations." Started as FMX, now includes Windows, Linux, macOS, and supports Red and Blue team efforts.
+</blockquote>
+<p><img src="THM Mod 6 ATT&CK Nav.png" alt="ATTCK NAV"></p>
+
+<h3>MITRE CAR</h3>
+<p>Deep analytics for detections beyond the ATT&CK technique level.</p>
+
+<h3>MITRE Engage</h3>
+<p><img src="THM MITRE ENGAGE Matrix.png" alt="MITRE ENGAGE"></p>
+<p><img src="Engage Matrix Gif.gif" alt="Engage Gif"></p>
+<p>Operational activities include:</p>
+<ul>
+  <li>Prepare</li>
+  <li>Expose</li>
+  <li>Affect</li>
+  <li>Elicit</li>
+  <li>Understand</li>
+</ul>
+
+</body>
+</html>
