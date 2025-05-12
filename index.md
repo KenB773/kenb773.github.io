@@ -268,7 +268,7 @@
           <i class="fas fa-university text-blue-300 text-xl"></i>
         </div>
         <div>
-          <a href="#" target="_blank" class="font-bold text-blue-300 hover:underline">
+          <a href="https://coursera.org/share/63d78b07f81af5e5c2658e982feacb82" target="_blank" class="font-bold text-blue-300 hover:underline">
             DevOps Culture and Mindset
           </a>
           <p class="text-sm text-gray-400">University of California, Davis - May 2025</p>
