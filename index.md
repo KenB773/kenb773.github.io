@@ -348,7 +348,7 @@
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
         <h3 class="text-xl font-bold mb-2">Home SOC on Azure</h3>
         <p class="mb-4">Functional personal SOC using Azure Monitor, Log Analytics, and Sentinel to track simulated home network threats in real time.</p>
-        <a href="homesoc.md" class="text-blue-400 hover:underline">View Details</a>
+        <a href="homesoc.html" class="text-blue-400 hover:underline">View Details</a>
       </div>
       <div class="bg-gray-900 rounded-xl overflow-hidden card-hover p-6">
         <h3 class="text-xl font-bold mb-2">'RogueSpeared' Tool</h3>
