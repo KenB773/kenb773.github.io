@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Vault - AWS EBS Backup</title>
+  <link rel="stylesheet" href="/assets/css/style.css?v=64449ae24f2bcfd363b0ed346a21f75421f936cb">
+</head>
+<body>
+<div class="markdown-body">
+<h1>Smart Vault: Automated EBS Backup System with DynamoDB logging</h1>
+
+<h2>Overview</h2>
+
+<p>My second project! This time I around I decided to create a <strong>Smart Vault</strong> - it's a serverless, tag-based backup automation system that creates and manages Amazon EBS snapshots for EC2 instances. It uses EventBridge to trigger AWS Lambda functions that:</p>
+
+<ul>
+<li>Create snapshots for tagged EC2 instances</li>
+<li>Store audit logs in DynamoDB</li>
+<li>Clean up expired snapshots based on customizable retention policies</li>
+</ul>
+
+<p>The system is designed to minimize storage costs while providing traceable, automated protection for instance data.</p>
+
+<hr />
+
+<h2>Architecture</h2>
+
+<p><strong>Core Components:</strong>
+- <strong>EC2 + EBS</strong>: Instances are tagged with <code>backup: true</code> to be included in the backup cycle
+- <strong>Lambda</strong>: Two functions handle snapshot creation and cleanup
+- <strong>EventBridge</strong>: Triggers Lambda on a daily schedule
+- <strong>DynamoDB</strong>: Stores audit logs for snapshot deletions
+- <strong>CloudWatch Logs</strong>: Captures job activity and debug output</p>
+
+<h3>Diagram</h3>
+
+<p><code>
++------------+     +---------------------+     +-------------------------+
+| EC2 w/ Tag | --&gt; | EventBridge Schedule| --&gt; | Lambda: Create Snapshot |
++------------+     +---------------------+     +-------------------------+
+                                                      |
+                                                      v
+                                               +-------------+
+                                               | EBS Snapshot|
+                                               +-------------+
+                                                      |
++----------------+    +----------------------+          |
+| EventBridge    | -&gt; | Lambda: Cleanup      |----------+
+| (daily)        |    | Old Snapshots        |          |
++----------------+    +----------------------+          v
+                                               +------------------------+
+                                               | DynamoDB Audit Log     |
+                                               +------------------------+
+</code></p>
+
+<hr />
+
+<h2>Features</h2>
+
+<ul>
+<li>✅ <strong>Tag-Based Control</strong>: Only instances tagged with <code>backup: true</code> are processed</li>
+<li>✅ <strong>Automated Scheduling</strong>: Runs daily with EventBridge rules</li>
+<li>✅ <strong>Snapshot Tagging</strong>: Snapshots include <code>InstanceId</code> and <code>CreatedBy: SmartVault</code></li>
+<li>✅ <strong>Audit Logging</strong>: Deletion records saved to DynamoDB</li>
+<li>✅ <strong>Retention Policy</strong>: Configurable snapshot lifespan (default: 7 days)</li>
+<li>✅ <strong>Serverless + Free Tier Friendly</strong></li>
+</ul>
+
+<hr />
+
+<h2>Tech Stack</h2>
+
+<ul>
+<li><strong>AWS Lambda</strong> (Python) - Check out the <a href="Lambda SmartVault.py">Smart Vault backup function code here</a>, and then the <a href="Lambda Cleanup Audit.py">Auto Cleanup/DynamoDB Audit function here</a>.</li>
+<li><strong>Amazon EC2 / EBS</strong></li>
+<li><strong>Amazon EventBridge</strong></li>
+<li><strong>Amazon DynamoDB</strong></li>
+<li><strong>AWS IAM (least privilege)</strong></li>
+<li><strong>CloudWatch Logs</strong></li>
+</ul>
+
+<hr />
+
+<h2>Screenshots</h2>
+
+<p><img src="EventBridge Cron.png" alt="EventBridgeCron" /></p>
+
+<p><img src="EventBridge Schedule.png" alt="EventBridgeSched" /></p>
+
+<p><img src="LambdaIAMPermissions.png" alt="LambdaIAM" /></p>
+
+<p><img src="CloudWatch Log.png" alt="CloudWatchLog" /></p>
+
+<p><img src="EC2 Launch.png" alt="EC2Launch" /></p>
+
+<hr />
+
+<h2>Future Improvements</h2>
+
+<ul>
+<li>Notification system via SNS</li>
+<li>Web UI for audit log visualization</li>
+<li>Snapshot restore utility</li>
+<li>EC2 volume-to-S3 archival (long term)</li>
+</ul>
+
+<hr />
+
+</div>
+</body>
+</html>

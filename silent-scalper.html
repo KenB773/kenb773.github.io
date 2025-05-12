@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silent Scalper</title>
+    <link rel="stylesheet" href="/assets/css/style.css?v=64449ae24f2bcfd363b0ed346a21f75421f936cb">
+</head>
+<body>
+<div class="markdown-body">
+<h1>Silent Scalper</h1>
+
+<h2>Project Summary</h2>
+
+<p><strong>Silent Scalper</strong> is my first AWS project! After completing AWS Certified Cloud Practitioner and Certified Solutions Architect - Associate, I felt it was time to go more hands-on and get some practical experience working with these systems before continuing on the certification path. My Silent Scalper is a serverless data pipeline designed to solve two common problems in (inadequately architected) cloud-based systems:</p>
+
+<ul>
+<li><strong>Wasting money on idle compute</strong> (servers sitting idle when there’s no work to be done)</li>
+<li><strong>Crashing during traffic spikes</strong> (overloaded infrastructure from sudden file dumps)</li>
+</ul>
+
+<p>This project uses AWS native services to create a responsive, cost-effective solution that automatically processes incoming files with no manual provisioning.</p>
+
+<hr />
+
+<h2>Architecture Overview</h2>
+
+<p><code>
+Uploader ──▶ S3 Bucket ──▶ Lambda Function
+                                 │
+                ┌────────────────┼────────────────┐
+                ▼                ▼                ▼
+           DynamoDB         SNS Notification   CloudWatch Logs
+                │
+                ▼
+        Quarantine S3 Bucket (on failure)
+</code></p>
+
+<hr />
+
+<h2>Key Features</h2>
+
+<ul>
+<li>✅ Event-driven compute triggered on file upload</li>
+<li>✅ Scales automatically — no idle infrastructure</li>
+<li>✅ Writes file metadata to DynamoDB</li>
+<li>✅ Sends real-time SNS alerts for success or failure</li>
+<li>✅ Quarantines failed uploads to a separate S3 bucket</li>
+<li>✅ CloudWatch logs for debugging and monitoring</li>
+</ul>
+
+<hr />
+
+<h2>Tech Stack</h2>
+
+<p><strong>AWS Services:</strong></p>
+
+<ul>
+<li>S3 (file upload + quarantine)</li>
+<li>Lambda (file processing)</li>
+<li>DynamoDB (metadata store)</li>
+<li>SNS (notifications)</li>
+<li>CloudWatch (logs + metrics)</li>
+<li>IAM (roles and permissions)</li>
+</ul>
+
+<p><strong>Runtime:</strong> Python 3.12 (AWS Lambda) - <a href="LambdaSSQB.py">Click here to see the full Python script used in this function</a></p>
+
+<hr />
+
+<h2>How It Works</h2>
+
+<ol>
+<li>A file is uploaded to the <code>silent-scalper-input-testcase</code> S3 bucket</li>
+<li>S3 triggers a Lambda function</li>
+<li>Lambda extracts metadata: filename, size, timestamp</li>
+<li>The metadata is stored in a DynamoDB table with GSI for easy queries (<code>SS-FileMetadata</code>)</li>
+<li>An SNS topic (<code>SSAlerts</code>) sends a notification email</li>
+<li>If an error occurs, the file is moved to a quarantine bucket (<code>silent-scalper-quarantine-test</code>)</li>
+<li>Logs and alerts are published to CloudWatch</li>
+</ol>
+
+<hr />
+
+<h2>Security &amp; Cost</h2>
+
+<ul>
+<li>Entire project should fit within the AWS Free Tier:
+<ul>
+<li>✅ 1M Lambda invocations/month</li>
+<li>✅ 5GB S3 storage</li>
+<li>✅ 25GB DynamoDB storage</li>
+<li>✅ 1M SNS publishes</li>
+<li>✅ 5GB CloudWatch logs</li>
+</ul></li>
+<li>IAM role for the Lambda function originally used managed policies (for the sake of simplicity) in this test case, but was made to follow a preferable least-privilege principle using an inline policy after confirming function. This is the policy used:</li>
+</ul>
+
+<p><img src="InlineLeastPrivQ.png" alt="InlinePermsJSON" /></p>
+
+<hr />
+
+<h2>Screenshots</h2>
+
+<p><img src="SS Lambda Role Permissions.png" alt="LambdaPerms" /></p>
+
+<p><img src="S3 Bucket SS.png" alt="S3Bucket" /></p>
+
+<p><img src="SS SNS Alerts.png" alt="SSSNS" /></p>
+
+<p><img src="CloudWatch Log.png" alt="CloudWatchLog" /></p>
+
+<p><img src="SNS Email.png" alt="SNSEmail" /></p>
+
+<p><img src="SS DDB GSI.png" alt="DDB GSI" /></p>
+
+<hr />
+
+<h2>Reflections</h2>
+
+<p>This project was a hands-on exploration of real-world AWS architecture patterns. I primarily wanted to finally and actually build something in AWS, but I also wanted it to be practical in the real world - hence the two common issues targeted here: wasteful compute and fragile scaling. Silent Scalper uses serverless tools to build a lean, resilient, and automated system that handles high-volume file ingestion with ease.</p>
+
+<p>Next features I plan to include:</p>
+
+<ul>
+<li>Adding automated retries from the quarantine bucket</li>
+<li>Integrating with a web dashboard for file tracking</li>
+<li>~~Logging file types and processing durations for analytics~~ Added! See what was changed in Lambda <a href="FileProcChanges.py">in this Python file</a>.</li>
+</ul>
+
+<hr />
+
+<h2>Architecture Diagram</h2>
+
+<p><img src="SSArchitectureDrawio.png" alt="ArchDrawio" /></p>
+
+</div>
+</body>
+</html>
