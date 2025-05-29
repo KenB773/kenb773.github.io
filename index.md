@@ -51,7 +51,7 @@
   <div class="container mx-auto flex flex-col md:flex-row items-center">
     <div class="md:w-1/2 mb-10 md:mb-0">
       <h1 class="text-4xl md:text-5xl font-bold mb-4 neon-text">Building & Securing a Cloud-Enabled, AI-Powered Future</h1>
-      <p class="text-xl text-blue-200 mb-8">Cybersecurity | Cloud Operations & Security | Dev(Sec)Ops Engineer | AI/ML Ops</p>
+      <p class="text-xl text-blue-200 mb-8">Cybersecurity Analyst | Cloud Security Engineer | Dev(Sec)Ops Engineer | AI/ML Security & Integration</p>
     </div>
     <div class="md:w-1/2 flex justify-center">
       <div class="terminal w-full max-w-md">
@@ -62,9 +62,9 @@
         </div>
         <div class="terminal-content">
           <p><span class="command">$ whoami</span></p>
-          <p class="response mb-4">Ken Brigham - Security & Cloud Specialist</p>
+          <p class="response mb-4">Ken Brigham - Cyber & Cloud Security Specialist</p>
           <p><span class="command">$ skills --cybersec --cloudsec --devops --aiops</span></p>
-          <p class="response mb-4">Cybersecurity | Cloud Security | Dev(Sec)Ops | AI/MLOps</p>
+          <p class="response mb-4">Cybersecurity | Cloud Security | Dev(Sec)Ops | AI/ML</p>
           <p><span class="command">$ contact --method=email</span></p>
           <p class="response">kenbrigham777@gmail.com</p>
           <p><span class="command">$ _</span><span class="cursor"></span></p>
@@ -105,6 +105,16 @@
           <i class="fas fa-certificate text-blue-300 text-xl"></i>
         </div>
         <div>
+          <a href="https://www.credly.com/badges/a6f69889-6761-4f9f-863e-5ece76672887/public_url" target="_blank" class="font-bold text-blue-300 hover:underline">Google Professional Cloud Security Engineer (PCSE)</a>
+          <p class="text-sm text-gray-400">Google - Apr 2025</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
           <a href="https://learn.microsoft.com/api/credentials/share/en-us/Ken-8675/7004E3A174DCBC1D" target="_blank" class="font-bold text-blue-300 hover:underline">Microsoft Certified: Azure Fundamentals (AZ-900)</a>
           <p class="text-sm text-gray-400">Microsoft - Mar 2025</p>
         </div>
@@ -135,18 +145,18 @@
           <i class="fas fa-certificate text-blue-300 text-xl"></i>
         </div>
         <div>
-          <a href="https://www.credly.com/badges/a6f69889-6761-4f9f-863e-5ece76672887/public_url" target="_blank" class="font-bold text-blue-300 hover:underline">Google Professional Cloud Security Engineer (PCSE)</a>
-          <p class="text-sm text-gray-400">Google - Apr 2025</p>
+          <a href="https://coursera.org/share/0358918c5d756b35545f7b33d6cdee81" target="_blank" class="font-bold text-blue-300 hover:underline">IBM AI Engineering Professional</a>
+          <p class="text-sm text-gray-400">IBM - May 2025</p>
         </div>
       </div>
-
+      
       <div class="bg-gray-800 p-6 rounded-lg flex items-start">
         <div class="bg-blue-900 p-3 rounded-full mr-4">
           <i class="fas fa-certificate text-blue-300 text-xl"></i>
         </div>
         <div>
-          <a href="https://coursera.org/share/0358918c5d756b35545f7b33d6cdee81" target="_blank" class="font-bold text-blue-300 hover:underline">IBM AI Engineering Professional</a>
-          <p class="text-sm text-gray-400">IBM - May 2025</p>
+          <a href="https://academy.hackthebox.com/achievement/badge/7d790823-39c5-11f0-bcfd-bea50ffe6cb4" target="_blank" class="font-bold text-blue-300 hover:underline">HTB & Google AI Red Teamer</a>
+          <p class="text-sm text-gray-400">HackTheBox and Google - May 2025</p>
         </div>
       </div>
 
@@ -185,6 +195,46 @@
           <i class="fas fa-certificate text-blue-300 text-xl"></i>
         </div>
         <div>
+          <a href="https://www.coursera.org/learn/ai-infrastructure-operations-fundamentals/home/module/1" target="_blank" class="font-bold text-blue-300 hover:underline">AI Infrastructure and Operations</a>
+          <p class="text-sm text-gray-400">NVIDIA - May 2025</p>
+        </div>
+      </div>      
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://www.credly.com/badges/00809779-7a33-4262-b2f9-a7b05cbf3e0e/linked_in_profile" target="_blank" class="font-bold text-blue-300 hover:underline">Fortinet Certified Associate in Cybersecurity</a>
+          <p class="text-sm text-gray-400">Fortinet - May 2025</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://www.credly.com/badges/6704d2b6-1127-4a8b-845f-2215f1c3f097/public_url" target="_blank" class="font-bold text-blue-300 hover:underline">Fortinet FortiGate 7.4 Operator</a>
+          <p class="text-sm text-gray-400">Fortinet - May 2025</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://www.credly.com/badges/05b29a42-1fa5-4b3e-9920-488e062e615e/linked_in_profile" target="_blank" class="font-bold text-blue-300 hover:underline">Fortinet Certified Fundamentals in Cybersecurity</a>
+          <p class="text-sm text-gray-400">Fortinet - May 2025</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
           <a href="https://www.scrumstudy.com/certification/verify?type=SFC&number=1077347" target="_blank" class="font-bold text-blue-300 hover:underline">Scrum Fundamentals Certified (SFC)</a>
           <p class="text-sm text-gray-400">SCRUMstudy - Apr 2025</p>
         </div>
@@ -205,11 +255,41 @@
           <i class="fas fa-certificate text-blue-300 text-xl"></i>
         </div>
         <div>
-          <a href="https://credentials.databricks.com/37b1543e-a0c1-4f32-b533-eb7d012ba0ec#acc.qgLw23W0" target="_blank" class="font-bold text-blue-300 hover:underline">Databricks Fundamentals Certified</a>
-          <p class="text-sm text-gray-400">Databricks - Apr 2025</p>
+          <a href="https://www.coursera.org/account/accomplishments/records/IHR5BON1QYHH" target="_blank" class="font-bold text-blue-300 hover:underline">Agile with Atlassian Jira</a>
+          <p class="text-sm text-gray-400">Atlassian - May 2025</p>
         </div>
       </div>
 
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://www.coursera.org/account/accomplishments/verify/HXSKXK48WM1W" target="_blank" class="font-bold text-blue-300 hover:underline">Blockchain Security</a>
+          <p class="text-sm text-gray-400">Infosec - May 2025</p>
+        </div>
+      </div>
+      
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://kenb773.github.io/" target="_blank" class="font-bold text-blue-300 hover:underline">AI Security</a>
+          <p class="text-sm text-gray-400">Infosec - May 2025</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-certificate text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://credentials.databricks.com/37b1543e-a0c1-4f32-b533-eb7d012ba0ec#acc.qgLw23W0" target="_blank" class="font-bold text-blue-300 hover:underline">Databricks Fundamentals Certified</a>
+          <p class="text-sm text-gray-400">Databricks - Apr 2025</p>
+        </div>
+      </div>      
+      
       <div class="bg-gray-800 p-6 rounded-lg flex items-start">
         <div class="bg-blue-900 p-3 rounded-full mr-4">
           <i class="fas fa-certificate text-blue-300 text-xl"></i>
@@ -244,6 +324,30 @@
           <i class="fas fa-university text-blue-300 text-xl"></i>
         </div>
         <div>
+          <a href="https://www.coursera.org/account/accomplishments/verify/NLFGKEQVGM3Q" target="_blank" class="font-bold text-blue-300 hover:underline">
+           AI Strategy and Governance
+          </a>
+          <p class="text-sm text-gray-400">The Wharton School, University of Pennsylvania - May 2025</p>
+        </div>
+      </div>      
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-university text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://www.coursera.org/learn/cloud-computing-security/home/welcome" target="_blank" class="font-bold text-blue-300 hover:underline">
+           Advanced System Security Design Specialization - CS 6910
+          </a>
+          <p class="text-sm text-gray-400">University of Colorado, Colorado Springs- June 2025</p>
+        </div>
+      </div>
+      
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-university text-blue-300 text-xl"></i>
+        </div>
+        <div>
           <a href="https://coursera.org/share/5bac352fbd57a3858721b658b0888097" target="_blank" class="font-bold text-blue-300 hover:underline">
             DevOps, DataOps, MLOps
           </a>
@@ -256,10 +360,22 @@
           <i class="fas fa-university text-blue-300 text-xl"></i>
         </div>
         <div>
+          <a href="https://www.coursera.org/learn/introduction-to-ai-for-cybersecurity/home/module/1" target="_blank" class="font-bold text-blue-300 hover:underline">
+            Introduction to Artificial Intelligence for Cybersecurity
+          </a>
+          <p class="text-sm text-gray-400">Whiting School of Engineering, Johns Hopkins University - June 2025</p>
+        </div>
+      </div>      
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-university text-blue-300 text-xl"></i>
+        </div>
+        <div>
           <a href="#" target="_blank" class="font-bold text-blue-300 hover:underline">
             Introduction to DevSecOps
           </a>
-          <p class="text-sm text-gray-400">Johns Hopkins Whiting School of Engineering - May 2025</p>
+          <p class="text-sm text-gray-400">Whiting School of Engineering, Johns Hopkins University - May 2025</p>
         </div>
       </div>
 
