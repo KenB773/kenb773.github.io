@@ -372,7 +372,7 @@
           <i class="fas fa-university text-blue-300 text-xl"></i>
         </div>
         <div>
-          <a href="#" target="_blank" class="font-bold text-blue-300 hover:underline">
+          <a href="https://www.coursera.org/account/accomplishments/verify/F788WRP5VP3W" target="_blank" class="font-bold text-blue-300 hover:underline">
             Introduction to DevSecOps
           </a>
           <p class="text-sm text-gray-400">Whiting School of Engineering, Johns Hopkins University - May 2025</p>
