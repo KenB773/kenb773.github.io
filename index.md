@@ -337,11 +337,23 @@
         </div>
         <div>
           <a href="https://www.coursera.org/learn/cloud-computing-security/home/welcome" target="_blank" class="font-bold text-blue-300 hover:underline">
-           Advanced System Security Design Specialization - CS 6910
+           Advanced System Security Design - CS 6910
           </a>
           <p class="text-sm text-gray-400">University of Colorado, Colorado Springs- June 2025</p>
         </div>
       </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg flex items-start">
+        <div class="bg-blue-900 p-3 rounded-full mr-4">
+          <i class="fas fa-university text-blue-300 text-xl"></i>
+        </div>
+        <div>
+          <a href="https://coursera.org/share/5bac352fbd57a3858721b658b0888097" target="_blank" class="font-bold text-blue-300 hover:underline">
+            Continuous Delivery & DevOps
+          </a>
+          <p class="text-sm text-gray-400">Darden School of Business, University of Virginia - May 2025</p>
+        </div>
+      </div>      
       
       <div class="bg-gray-800 p-6 rounded-lg flex items-start">
         <div class="bg-blue-900 p-3 rounded-full mr-4">
